@@ -1,7 +1,42 @@
-% In this file you should put the actual content of the blueprint.
-% It will be used both by the web and the print version.
-% It should *not* include the \begin{document}
-%
-% If you want to split the blueprint content into several files then
-% the current file can be a simple sequence of \input. Otherwise It
-% can start with a \section or \chapter for instance.
+\section{Preliminaries}
+Suppose throughout that \(P\) is a poset with order relation \(\leq\).
+\begin{definition}
+  We say that a subset \(S \subseteq P\) is \emph{directed} if for every \(x, y \in S\) there exists \(z \in S\), such that \(x \leq z\) and \(y \leq z\).
+  
+  We say that \(S\) is \emph{downwards closed} if whenever \(x \in S\) and \(y \leq x\), we also have \(y \in S\).
+
+  If \(S\) is both directed and downwards closed, we call \(S\) an \emph{ideal} of \(P\).
+\end{definition}
+
+\begin{lemma}
+  For all \(x \in P\), the set \(\downarrow x = \left\{y \in P \vert y \leq x\right\}\) is an ideal of \(P\).
+\end{lemma}
+
+\begin{lemma}
+  Suppose the poset \(P\) has binary joins \(\vee\) and \(S \subseteq P\) is downwards closed.
+  Then \(P\) is directed (and hence an ideal) if and only if \(P\) is closed under binary joins. 
+\end{lemma}
+
+\begin{definition}
+  Whenever a directed subset \(S \subseteq P\) has a join, we call it a \emph{directed join} and denote it by \(\dirjoin S\). If \(P\) has all directed joins, we call \(P\) a \emph{directed complete partial order}, or \emph{dcpo} for short.
+\end{definition}
+
+\begin{lemma}
+  To construct arbitrary joins in a dcpo \(P\), it suffices to construct all finite joins. Furthermore, to show meets distribute over arbitrary joins, it suffices to show they distribute overy directed and finite joins.
+\end{lemma}
+
+\section{Ideal completions}
+
+\begin{definition}
+  We define \(\idl(P)\) to be the set of all ideals of \(P\) and call it \emph{the ideal completion of \(P\)}. It is easy to see that \(\idl(P)\) forms a poset under subset inclusion and that there is a monotone function \(\eta : P \to \idl(P)\), given by \(\eta(x) = \downarrow x\).
+\end{definition}
+
+\begin{proposition}
+  The set \(\idl(P)\) is a dcpo, with directed joins given by unions.
+\end{proposition}
+
+For my project, I would like to formalize the stone duality and some related facts. We talked about the possibility of contributing to an existing formalization, but I think it would be good if I tried to plan out the project myself. I am also interested in isolating the constructive part of the proof, and possibly doing the classical part as a stretch goal. What I am planning to formalize is
+1. Given a poset P, construct its ideal completion Idl(P) and show that it forms the free dcpo over P. If P is a distributive lattice, show that it forms the free frame over P, call this the coherent frame over P.
+2. Introduce compact elements, show some facts about the subposet of compact elements KP. If P is a boolean algebra, show that K is functorial.
+3. Show that KIdl(P) is isomorphic to P for every poset P. If P is a boolean algebra, show that this isomorphism is natural.
+4. Introduce algebraic dcpos. Show that a dcpo A is algebraic if and only if it isomorphic to Idl(KA).

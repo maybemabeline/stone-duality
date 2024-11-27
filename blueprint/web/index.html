@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  MathJax = { 
+    tex: {
+		    inlineMath: [['$','$'], ['\\(','\\)']]
+	} }
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<meta name="generator" content="plasTeX" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Localic Stone Duality</title>
+<link rel="stylesheet" href="styles/theme-white.css" />
+<link rel="stylesheet" href="styles/amsthm.css" />
+<link rel="stylesheet" href="styles/showmore.css" />
+<link rel="stylesheet" href="styles/blueprint.css" />
+<link rel="stylesheet" href="styles/extra_styles.css" />
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<div class="content">
+<div class="content-wrapper">
+
+
+<div class="main-text">
+ <div class="titlepage">
+<h1>Localic Stone Duality</h1>
+<p class="authors">
+<span class="author">Mabel Najdovski</span>
+</p>
+</div><h1 id="a0000000002">0.1 Preliminaries</h1>
+<p> Suppose throughout that \(P\) is a poset with order relation \(\leq \). </p>
+<div class="definition_thmwrapper theorem-style-definition" id="a0000000003">
+  <div class="definition_thmheading">
+    <span class="definition_thmcaption">
+    Definition
+    </span>
+    <span class="definition_thmlabel">1</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="index.html#a0000000003">#</a>
+    
+    
+    
+        </div>
+  </div>
+  <div class="definition_thmcontent">
+  <p>We say that a subset \(S \subseteq P\) is <em>directed</em> if for every \(x, y \in S\) there exists \(z \in S\), such that \(x \leq z\) and \(y \leq z\). </p>
+<p>We say that \(S\) is <em>downwards closed</em> if whenever \(x \in S\) and \(y \leq x\), we also have \(y \in S\). </p>
+<p>If \(S\) is both directed and downwards closed, we call \(S\) an <em>ideal</em> of \(P\). </p>
+
+  </div>
+</div>
+<div class="lemma_thmwrapper theorem-style-plain" id="a0000000004">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">2</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="index.html#a0000000004">#</a>
+    
+    
+    
+        </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>For all \(x \in P\), the set \(\downarrow x = \left\{ y \in P \vert y \leq x\right\} \) is an ideal of \(P\). </p>
+
+  </div>
+</div>
+<div class="lemma_thmwrapper theorem-style-plain" id="a0000000005">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">3</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="index.html#a0000000005">#</a>
+    
+    
+    
+        </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>Suppose the poset \(P\) has binary joins \(\vee \) and \(S \subseteq P\) is downwards closed. Then \(P\) is directed (and hence an ideal) if and only if \(P\) is closed under binary joins. </p>
+
+  </div>
+</div>
+<div class="definition_thmwrapper theorem-style-definition" id="a0000000006">
+  <div class="definition_thmheading">
+    <span class="definition_thmcaption">
+    Definition
+    </span>
+    <span class="definition_thmlabel">4</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="index.html#a0000000006">#</a>
+    
+    
+    
+        </div>
+  </div>
+  <div class="definition_thmcontent">
+  <p>Whenever a directed subset \(S \subseteq P\) has a join, we call it a <em>directed join</em> and denote it by \(\bigvee ^{\uparrow }S\). If \(P\) has all directed joins, we call \(P\) a <em>directed complete partial order</em>, or <em>dcpo</em> for short. </p>
+
+  </div>
+</div>
+<div class="lemma_thmwrapper theorem-style-plain" id="a0000000007">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">5</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="index.html#a0000000007">#</a>
+    
+    
+    
+        </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>To construct arbitrary joins in a dcpo \(P\), it suffices to construct all finite joins. Furthermore, to show meets distribute over arbitrary joins, it suffices to show they distribute overy directed and finite joins. </p>
+
+  </div>
+</div>
+<h1 id="a0000000008">0.2 Ideal completions</h1>
+<div class="definition_thmwrapper theorem-style-definition" id="a0000000009">
+  <div class="definition_thmheading">
+    <span class="definition_thmcaption">
+    Definition
+    </span>
+    <span class="definition_thmlabel">6</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="index.html#a0000000009">#</a>
+    
+    
+    
+        </div>
+  </div>
+  <div class="definition_thmcontent">
+  <p>We define \(\operatorname{Idl}(P)\) to be the set of all ideals of \(P\) and call it <em>the ideal completion of \(P\)</em>. It is easy to see that \(\operatorname{Idl}(P)\) forms a poset under subset inclusion and that there is a monotone function \(\eta : P \to \operatorname{Idl}(P)\), given by \(\eta (x) = \downarrow x\). </p>
+
+  </div>
+</div>
+<div class="proposition_thmwrapper theorem-style-plain" id="a0000000010">
+  <div class="proposition_thmheading">
+    <span class="proposition_thmcaption">
+    Proposition
+    </span>
+    <span class="proposition_thmlabel">7</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="index.html#a0000000010">#</a>
+    
+    
+    
+        </div>
+  </div>
+  <div class="proposition_thmcontent">
+  <p>The set \(\operatorname{Idl}(P)\) is a dcpo, with directed joins given by unions. </p>
+
+  </div>
+</div>
+<p>For my project, I would like to formalize the stone duality and some related facts. We talked about the possibility of contributing to an existing formalization, but I think it would be good if I tried to plan out the project myself. I am also interested in isolating the constructive part of the proof, and possibly doing the classical part as a stretch goal. What I am planning to formalize is 1. Given a poset P, construct its ideal completion Idl(P) and show that it forms the free dcpo over P. If P is a distributive lattice, show that it forms the free frame over P, call this the coherent frame over P. 2. Introduce compact elements, show some facts about the subposet of compact elements KP. If P is a boolean algebra, show that K is functorial. 3. Show that KIdl(P) is isomorphic to P for every poset P. If P is a boolean algebra, show that this isomorphism is natural. 4. Introduce algebraic dcpos. Show that a dcpo A is algebraic if and only if it isomorphic to Idl(KA).  </p>
+
+</div> <!--main-text -->
+</div> <!-- content-wrapper -->
+</div> <!-- content -->
+</div> <!-- wrapper -->
+
+<nav class="prev_up_next">
+  <svg  id="showmore-minus" class="icon icon-eye-minus showmore"><use xlink:href="symbol-defs.svg#icon-eye-minus"></use></svg>
+
+  <svg  id="showmore-plus" class="icon icon-eye-plus showmore"><use xlink:href="symbol-defs.svg#icon-eye-plus"></use></svg>
+
+</nav>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/plastex.js"></script>
+<script type="text/javascript" src="js/svgxuse.js"></script>
+<script type="text/javascript" src="js/js.cookie.min.js"></script>
+<script type="text/javascript" src="js/showmore.js"></script>
+</body>
+</html>
