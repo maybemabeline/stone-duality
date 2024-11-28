@@ -20,7 +20,6 @@ in pkgs.mkShell {
     pkgs.ghostscript
     pkgs.pdf2svg
     (python.withPackages (python-pkgs: with python-pkgs; [
-      pygraphviz
       leanblueprint
     ]))
   ];

@@ -73,15 +73,14 @@
       Definition
       </span>
       <span class="definition_thmlabel">1</span></div>
-    <div class="thm_thmcontent"><p>We say that a subset \(S \subseteq P\) is <em>directed</em> if for every \(x, y \in S\) there exists \(z \in S\), such that \(x \leq z\) and \(y \leq z\). </p>
-<p>We say that \(S\) is <em>downwards closed</em> if whenever \(x \in S\) and \(y \leq x\), we also have \(y \in S\). </p>
+    <div class="thm_thmcontent"><p> We say that a subset \(S \subseteq P\) is <em>directed</em> if it is both nonempty and for every \(x, y \in S\) there exists \(z \in S\), such that \(x \leq z\) and \(y \leq z\). We say that \(S\) is <em>downwards closed</em> if whenever \(x \in S\) and \(y \leq x\), we also have \(y \in S\). </p>
 <p>If \(S\) is both directed and downwards closed, we call \(S\) an <em>ideal</em> of \(P\). </p>
 </div>
 
     <a class="latex_link" href="index.html#a0000000003">LaTeX</a>
     
     
-  
+  <a class="lean_link lean_decl" href="https://maybemabeline.github.io/stone-duality/docs/find/#doc/Order.Directed">Lean</a>
     
     
   
@@ -289,7 +288,7 @@ graphContainer.graphviz({useWorker: true})
     .width(width)
     .height(height)
     .fit(true)
-    .renderDot(`strict digraph "" {	graph [bgcolor=transparent];	node [label="\N",		penwidth=1.8	];	edge [arrowhead=vee];	a0000000010	[color=blue,		label=a0000000010,		shape=ellipse];	a0000000003	[color=blue,		fillcolor="#A3D6FF",		label=a0000000003,		shape=box,		style=filled];	a0000000006	[color=blue,		fillcolor="#A3D6FF",		label=a0000000006,		shape=box,		style=filled];	a0000000004	[color=blue,		label=a0000000004,		shape=ellipse];	a0000000005	[color=blue,		label=a0000000005,		shape=ellipse];	a0000000009	[color=blue,		fillcolor="#A3D6FF",		label=a0000000009,		shape=box,		style=filled];	a0000000007	[color=blue,		label=a0000000007,		shape=ellipse];}`)
+    .renderDot(`strict digraph "" {	graph [bgcolor=transparent];	node [label="\N",		penwidth=1.8	];	edge [arrowhead=vee];	a0000000007	[color=blue,		label=a0000000007,		shape=ellipse];	a0000000010	[color=blue,		label=a0000000010,		shape=ellipse];	a0000000003	[color=blue,		fillcolor="#A3D6FF",		label=a0000000003,		shape=box,		style=filled];	a0000000009	[color=blue,		fillcolor="#A3D6FF",		label=a0000000009,		shape=box,		style=filled];	a0000000005	[color=blue,		label=a0000000005,		shape=ellipse];	a0000000004	[color=blue,		label=a0000000004,		shape=ellipse];	a0000000006	[color=blue,		fillcolor="#A3D6FF",		label=a0000000006,		shape=box,		style=filled];}`)
     .on("end", interactive);
 
 latexLabelEscaper = function(label) {

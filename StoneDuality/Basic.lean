@@ -11,10 +11,6 @@ variable [Preorder P]
 
 def downset (x : P) := { y : P | y ≤ x }
 
-instance downsetTop (x : P) : OrderTop (downset x) where
-  top := by use x; unfold downset; simp
-  le_top := by unfold downset; simp
-
 instance downset_ideal (x : P) : Ideal P where
   carrier := downset x
   lower' := by 
@@ -26,13 +22,11 @@ instance downset_ideal (x : P) : Ideal P where
     use x
     unfold downset; simp
   directed' := by
-    have H : IsDirected (downset x) (· ≤ ·) := inferInstance
-    intro y yx z zx; simp
-    have H1 := H.directed; simp at H1
-    rcases H1 y yx z zx with ⟨z, zx⟩
-    exists z
-    apply and_assoc.1
-    exact zx
+    intro y yx z zx
+    use x
+    unfold downset
+    simp
+    use yx, zx
 
 
 @[simp] lemma carrier_mem_ideal {S : Set P} {p : S.Nonempty} 

@@ -1,8 +1,8 @@
 \section{Preliminaries}
 Suppose throughout that \(P\) is a poset with order relation \(\leq\).
 \begin{definition}
-  We say that a subset \(S \subseteq P\) is \emph{directed} if for every \(x, y \in S\) there exists \(z \in S\), such that \(x \leq z\) and \(y \leq z\).
-  
+  \lean{Order.Directed}
+  We say that a subset \(S \subseteq P\) is \emph{directed} if it is both nonempty and for every \(x, y \in S\) there exists \(z \in S\), such that \(x \leq z\) and \(y \leq z\).
   We say that \(S\) is \emph{downwards closed} if whenever \(x \in S\) and \(y \leq x\), we also have \(y \in S\).
 
   If \(S\) is both directed and downwards closed, we call \(S\) an \emph{ideal} of \(P\).
