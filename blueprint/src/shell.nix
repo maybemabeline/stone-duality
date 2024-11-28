@@ -3,8 +3,8 @@ let
   pkgs = import <nixos-unstable> {};
 
   tex = (pkgs.texlive.combine {
-    inherit (pkgs.texlive) scheme-minimal mathtools
-    latexmk xetex etoolbox unicode-math dvisvgm pdfcrop;
+    inherit (pkgs.texlive) scheme-basic amsmath mathtools
+      latexmk xetex etoolbox unicode-math dvisvgm pdfcrop geometry;
   });
   python = pkgs.python3.override {
     self = python;
@@ -20,7 +20,6 @@ in pkgs.mkShell {
     pkgs.ghostscript
     pkgs.pdf2svg
     (python.withPackages (python-pkgs: with python-pkgs; [
-      # select Python packages- here
       pygraphviz
       leanblueprint
     ]))
