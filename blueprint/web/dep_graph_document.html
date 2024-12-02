@@ -61,37 +61,6 @@
 <div id="statements">
 
     
-    <div class="dep-modal-container" id="a0000000003_modal">
-      <div class="dep-modal-content">
-          <button class="dep-closebtn">
-<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
-</button>
-        
-  <div class="thm" id="a0000000003" style="display: none">
-    <div class="thm_thmheading">
-      <span class="definition_thmcaption">
-      Definition
-      </span>
-      <span class="definition_thmlabel">1</span></div>
-    <div class="thm_thmcontent"><p> We say that a subset \(S \subseteq P\) is <em>directed</em> if it is both nonempty and for every \(x, y \in S\) there exists \(z \in S\), such that \(x \leq z\) and \(y \leq z\). We say that \(S\) is <em>downwards closed</em> if whenever \(x \in S\) and \(y \leq x\), we also have \(y \in S\). </p>
-<p>If \(S\) is both directed and downwards closed, we call \(S\) an <em>ideal</em> of \(P\). </p>
-</div>
-
-    <a class="latex_link" href="index.html#a0000000003">LaTeX</a>
-    
-    
-  <a class="lean_link lean_decl" href="https://maybemabeline.github.io/stone-duality/docs/find/#doc/Order.Directed">Lean</a>
-    
-    
-  
-    
-  </div>
-    
-      </div>
-    </div>
-
-
-    
     <div class="dep-modal-container" id="a0000000004_modal">
       <div class="dep-modal-content">
           <button class="dep-closebtn">
@@ -100,17 +69,17 @@
         
   <div class="thm" id="a0000000004" style="display: none">
     <div class="thm_thmheading">
-      <span class="lemma_thmcaption">
-      Lemma
+      <span class="definition_thmcaption">
+      Definition
       </span>
-      <span class="lemma_thmlabel">2</span></div>
-    <div class="thm_thmcontent"><p>For all \(x \in P\), the set \(\downarrow x = \left\{ y \in P \vert y \leq x\right\} \) is an ideal of \(P\). </p>
+      <span class="definition_thmlabel">3</span></div>
+    <div class="thm_thmcontent"><p>  If \(S\) is nonempty, directed and downwards closed, we call \(S\) an <em>ideal</em> of \(P\). </p>
 </div>
 
-    <a class="latex_link" href="index.html#a0000000004">LaTeX</a>
+    <a class="latex_link" href="sect0001.html#a0000000004">LaTeX</a>
     
     
-  
+  <a class="lean_link lean_decl" href="https://maybemabeline.github.io/stone-duality/docs/find/#doc/Order.Ideal">Lean</a>
     
     
   
@@ -133,14 +102,14 @@
       <span class="lemma_thmcaption">
       Lemma
       </span>
-      <span class="lemma_thmlabel">3</span></div>
-    <div class="thm_thmcontent"><p>Suppose the poset \(P\) has binary joins \(\vee \) and \(S \subseteq P\) is downwards closed. Then \(P\) is directed (and hence an ideal) if and only if \(P\) is closed under binary joins. </p>
+      <span class="lemma_thmlabel">4</span></div>
+    <div class="thm_thmcontent"><p> For all \(x \in P\), the set \({\downarrow }x = \left\{ y \in P \vert y \leq x\right\} \) is an ideal of \(P\). </p>
 </div>
 
-    <a class="latex_link" href="index.html#a0000000005">LaTeX</a>
+    <a class="latex_link" href="sect0001.html#a0000000005">LaTeX</a>
     
     
-  
+  <a class="lean_link lean_decl" href="https://maybemabeline.github.io/stone-duality/docs/find/#doc/Order.downset_ideal">Lean</a>
     
     
   
@@ -160,14 +129,14 @@
         
   <div class="thm" id="a0000000006" style="display: none">
     <div class="thm_thmheading">
-      <span class="definition_thmcaption">
-      Definition
+      <span class="lemma_thmcaption">
+      Lemma
       </span>
-      <span class="definition_thmlabel">4</span></div>
-    <div class="thm_thmcontent"><p>Whenever a directed subset \(S \subseteq P\) has a join, we call it a <em>directed join</em> and denote it by \(\bigvee ^{\uparrow }S\). If \(P\) has all directed joins, we call \(P\) a <em>directed complete partial order</em>, or <em>dcpo</em> for short. </p>
+      <span class="lemma_thmlabel">5</span></div>
+    <div class="thm_thmcontent"><p>Suppose the poset \(P\) has binary joins \(\vee \) and \(S \subseteq P\) is downwards closed. Then \(P\) is directed (and hence an ideal) if and only if \(P\) is closed under binary joins. </p>
 </div>
 
-    <a class="latex_link" href="index.html#a0000000006">LaTeX</a>
+    <a class="latex_link" href="sect0001.html#a0000000006">LaTeX</a>
     
     
   
@@ -190,14 +159,44 @@
         
   <div class="thm" id="a0000000007" style="display: none">
     <div class="thm_thmheading">
+      <span class="definition_thmcaption">
+      Definition
+      </span>
+      <span class="definition_thmlabel">6</span></div>
+    <div class="thm_thmcontent"><p> Whenever a directed subset \(S \subseteq P\) has a join, we call it a <em>directed join</em> and denote it by \(\bigvee ^{\uparrow }S\). If \(P\) has all directed joins, we call \(P\) a <em>directed complete partial order</em>, or <em>dcpo</em> for short. </p>
+</div>
+
+    <a class="latex_link" href="sect0001.html#a0000000007">LaTeX</a>
+    
+    
+  <a class="lean_link lean_decl" href="https://maybemabeline.github.io/stone-duality/docs/find/#doc/Order.Dcpo">Lean</a>
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="a0000000008_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="a0000000008" style="display: none">
+    <div class="thm_thmheading">
       <span class="lemma_thmcaption">
       Lemma
       </span>
-      <span class="lemma_thmlabel">5</span></div>
+      <span class="lemma_thmlabel">7</span></div>
     <div class="thm_thmcontent"><p>To construct arbitrary joins in a dcpo \(P\), it suffices to construct all finite joins. Furthermore, to show meets distribute over arbitrary joins, it suffices to show they distribute overy directed and finite joins. </p>
 </div>
 
-    <a class="latex_link" href="index.html#a0000000007">LaTeX</a>
+    <a class="latex_link" href="sect0001.html#a0000000008">LaTeX</a>
     
     
   
@@ -220,14 +219,14 @@
         
   <div class="thm" id="a0000000009" style="display: none">
     <div class="thm_thmheading">
-      <span class="definition_thmcaption">
-      Definition
+      <span class="lemma_thmcaption">
+      Lemma
       </span>
-      <span class="definition_thmlabel">6</span></div>
-    <div class="thm_thmcontent"><p>We define \(\operatorname{Idl}(P)\) to be the set of all ideals of \(P\) and call it <em>the ideal completion of \(P\)</em>. It is easy to see that \(\operatorname{Idl}(P)\) forms a poset under subset inclusion and that there is a monotone function \(\eta : P \to \operatorname{Idl}(P)\), given by \(\eta (x) = \downarrow x\). </p>
+      <span class="lemma_thmlabel">8</span></div>
+    <div class="thm_thmcontent"><p>The function \(f\) preserves directed sets. More precisely, if \(S\) is a directed set in \(P\), then \( \left\{  f(s) \vert s \in S \right\} \) is a directed set in \(Q\). </p>
 </div>
 
-    <a class="latex_link" href="index.html#a0000000009">LaTeX</a>
+    <a class="latex_link" href="sect0001.html#a0000000009">LaTeX</a>
     
     
   
@@ -253,14 +252,315 @@
       <span class="proposition_thmcaption">
       Proposition
       </span>
-      <span class="proposition_thmlabel">7</span></div>
-    <div class="thm_thmcontent"><p>The set \(\operatorname{Idl}(P)\) is a dcpo, with directed joins given by unions. </p>
+      <span class="proposition_thmlabel">9</span></div>
+    <div class="thm_thmcontent"><p>Suppose \(S\) is a directed set. Then \(\bigvee ^{\uparrow }\left\{ f(s) \vert s \in S\right\}  \leq f(\bigvee ^{\uparrow }S).\) </p>
 </div>
 
-    <a class="latex_link" href="index.html#a0000000010">LaTeX</a>
+    <a class="latex_link" href="sect0001.html#a0000000010">LaTeX</a>
     
     
   
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="a0000000011_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="a0000000011" style="display: none">
+    <div class="thm_thmheading">
+      <span class="definition_thmcaption">
+      Definition
+      </span>
+      <span class="definition_thmlabel">10</span></div>
+    <div class="thm_thmcontent"><p>We say that the function \(f\) is <em>Scott continuous</em> if for every directed set \(S\), \(f(\bigvee ^{\uparrow }S) \leq \bigvee ^{\uparrow }\left\{ f(s) \vert s \in S\right\} \) </p>
+</div>
+
+    <a class="latex_link" href="sect0001.html#a0000000011">LaTeX</a>
+    
+    
+  
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="a0000000012_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="a0000000012" style="display: none">
+    <div class="thm_thmheading">
+      <span class="definition_thmcaption">
+      Definition
+      </span>
+      <span class="definition_thmlabel">11</span></div>
+    <div class="thm_thmcontent"><p>We define \(\operatorname{Idl}(P)\) to be the set of all ideals of \(P\) and call it <em>the ideal completion of \(P\)</em>. The set \(\operatorname{Idl}(P)\) forms a poset under subset inclusion. </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#a0000000012">LaTeX</a>
+    
+    
+  
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="a0000000013_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="a0000000013" style="display: none">
+    <div class="thm_thmheading">
+      <span class="proposition_thmcaption">
+      Proposition
+      </span>
+      <span class="proposition_thmlabel">12</span></div>
+    <div class="thm_thmcontent"><p>The assignment \(x \mapsto {\downarrow }x\) defines a monotone function \(\eta : P \to \operatorname{Idl}(P)\). </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#a0000000013">LaTeX</a>
+    
+    
+  
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="a0000000014_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="a0000000014" style="display: none">
+    <div class="thm_thmheading">
+      <span class="proposition_thmcaption">
+      Proposition
+      </span>
+      <span class="proposition_thmlabel">13</span></div>
+    <div class="thm_thmcontent"><p>The union of a directed family of ideals is an ideal. Consequently, \(\operatorname{Idl}(P)\) is a dcpo. </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#a0000000014">LaTeX</a>
+    
+    
+  
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="a0000000015_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="a0000000015" style="display: none">
+    <div class="thm_thmheading">
+      <span class="theorem_thmcaption">
+      Theorem
+      </span>
+      <span class="theorem_thmlabel">14</span></div>
+    <div class="thm_thmcontent"><p>The poset \(\operatorname{Idl}(P)\) forms the free dcpo over \(P\) with unit \(\eta \). Given a dcpo \(Q\) and a monotone function \(f : P \to Q\), there exists a unique Scott continuous function \(\overline{f} : \operatorname{Idl}(P) \to Q\), such that \(\overline{f}(\dowset {x}) = f(x)\) for all \(x \in P\). </p>
+<p>The function \(\overline{f}\) is defined by the assignment \(I \mapsto \bigvee ^{\uparrow }\left\{  f(x) \vert x \in I \right\} \). </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#a0000000015">LaTeX</a>
+    
+    
+  
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="a0000000016_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="a0000000016" style="display: none">
+    <div class="thm_thmheading">
+      <span class="corollary_thmcaption">
+      Corollary
+      </span>
+      <span class="corollary_thmlabel">15</span></div>
+    <div class="thm_thmcontent"><p>The assignment \(P \mapsto \operatorname{Idl}(P)\) is functorial. </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#a0000000016">LaTeX</a>
+    
+    
+  
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="a0000000017_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="a0000000017" style="display: none">
+    <div class="thm_thmheading">
+      <span class="proposition_thmcaption">
+      Proposition
+      </span>
+      <span class="proposition_thmlabel">16</span></div>
+    <div class="thm_thmcontent"><p>Suppose \(P\) has all finite meets. Then so does \(\operatorname{Idl}(P)\), with binary joins given by intersection and top element given by the ideal \(P\). Since \({\downarrow }(x \wedge y) = {\downarrow }x \cap {\downarrow }y\) and \({\downarrow }1 = P\), the function \(\eta \) preserves all finite meets. </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#a0000000017">LaTeX</a>
+    
+    
+  
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="a0000000018_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="a0000000018" style="display: none">
+    <div class="thm_thmheading">
+      <span class="proposition_thmcaption">
+      Proposition
+      </span>
+      <span class="proposition_thmlabel">17</span></div>
+    <div class="thm_thmcontent"><p>Suppose \(P\) has all finite meets. Then meets distribute over directed joins in \(\operatorname{Idl}(P)\). </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#a0000000018">LaTeX</a>
+    
+    
+  
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="def:directed_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="def:directed" style="display: none">
+    <div class="thm_thmheading">
+      <span class="definition_thmcaption">
+      Definition
+      </span>
+      <span class="definition_thmlabel">1</span></div>
+    <div class="thm_thmcontent"><p>  We say that a subset \(S \subseteq P\) is <em>directed</em> if for every \(x, y \in S\) there exists \(z \in S\), such that \(x \leq z\) and \(y \leq z\). </p>
+</div>
+
+    <a class="latex_link" href="sect0001.html#def:directed">LaTeX</a>
+    
+    
+  <a class="lean_link lean_decl" href="https://maybemabeline.github.io/stone-duality/docs/find/#doc/DirectedOn">Lean</a>
+    
+    
+  
+    
+  </div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="def:lower_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="def:lower" style="display: none">
+    <div class="thm_thmheading">
+      <span class="definition_thmcaption">
+      Definition
+      </span>
+      <span class="definition_thmlabel">2</span></div>
+    <div class="thm_thmcontent"><p>  We say that \(S\) is <em>downwards closed</em> if whenever \(x \in S\) and \(y \leq x\), we also have \(y \in S\). </p>
+</div>
+
+    <a class="latex_link" href="sect0001.html#def:lower">LaTeX</a>
+    
+    
+  <a class="lean_link lean_decl" href="https://maybemabeline.github.io/stone-duality/docs/find/#doc/IsLowerSet">Lean</a>
     
     
   
@@ -288,7 +588,7 @@ graphContainer.graphviz({useWorker: true})
     .width(width)
     .height(height)
     .fit(true)
-    .renderDot(`strict digraph "" {	graph [bgcolor=transparent];	node [label="\N",		penwidth=1.8	];	edge [arrowhead=vee];	a0000000007	[color=blue,		label=a0000000007,		shape=ellipse];	a0000000010	[color=blue,		label=a0000000010,		shape=ellipse];	a0000000003	[color=blue,		fillcolor="#A3D6FF",		label=a0000000003,		shape=box,		style=filled];	a0000000009	[color=blue,		fillcolor="#A3D6FF",		label=a0000000009,		shape=box,		style=filled];	a0000000005	[color=blue,		label=a0000000005,		shape=ellipse];	a0000000004	[color=blue,		label=a0000000004,		shape=ellipse];	a0000000006	[color=blue,		fillcolor="#A3D6FF",		label=a0000000006,		shape=box,		style=filled];}`)
+    .renderDot(`strict digraph "" {	graph [bgcolor=transparent];	node [label="\N",		penwidth=1.8	];	edge [arrowhead=vee];	a0000000004	[color=green,		fillcolor="#B0ECA3",		label=a0000000004,		shape=box,		style=filled];	a0000000006	[color=blue,		label=a0000000006,		shape=ellipse];	a0000000008	[color=blue,		label=a0000000008,		shape=ellipse];	a0000000009	[color=blue,		label=a0000000009,		shape=ellipse];	a0000000013	[color=blue,		label=a0000000013,		shape=ellipse];	a0000000015	[color=blue,		label=a0000000015,		shape=ellipse];	"def:directed"	[color=green,		fillcolor="#B0ECA3",		label=directed,		shape=box,		style=filled];	"def:directed" -> a0000000004	[style=dashed];	a0000000007	[color=green,		fillcolor="#B0ECA3",		label=a0000000007,		shape=box,		style=filled];	a0000000011	[color=blue,		fillcolor="#A3D6FF",		label=a0000000011,		shape=box,		style=filled];	"def:lower"	[color=green,		fillcolor="#B0ECA3",		label=lower,		shape=box,		style=filled];	"def:lower" -> a0000000004	[style=dashed];	a0000000012	[color=blue,		fillcolor="#A3D6FF",		label=a0000000012,		shape=box,		style=filled];	a0000000005	[color=green,		label=a0000000005,		shape=ellipse];	a0000000010	[color=blue,		label=a0000000010,		shape=ellipse];	a0000000014	[color=blue,		label=a0000000014,		shape=ellipse];	a0000000017	[color=blue,		label=a0000000017,		shape=ellipse];	a0000000018	[color=blue,		label=a0000000018,		shape=ellipse];	a0000000016	[color=blue,		label=a0000000016,		shape=ellipse];}`)
     .on("end", interactive);
 
 latexLabelEscaper = function(label) {

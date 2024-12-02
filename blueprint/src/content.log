@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/nixos.org) (preloaded format=pdflatex 1980.1.1)  28 NOV 2024 20:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/nixos.org) (preloaded format=pdflatex 1980.1.1)  2 DEC 2024 21:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -8,7 +8,7 @@ entering extended mode
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 ./content.tex:1: Undefined control sequence.
-l.1 \section
+l.1 \chapter
             {Preliminaries}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -23,7 +23,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1 \section{P
+l.1 \chapter{P
               reliminaries}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -105,6 +105,34 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+./content.tex:5: Undefined control sequence.
+l.5   \lean
+           {DirectedOn}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no n in font nullfont!
+./content.tex:6: Undefined control sequence.
+l.6   \leanok
+             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 Missing character: There is no W in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
@@ -158,92 +186,145 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 1--5
-[]
- []
-
-
-Overfull \hbox (7.80904pt too wide) in paragraph at lines 1--5
-\OML/cmm/m/it/10 P$
- []
-
-
-Overfull \hbox (7.7778pt too wide) in paragraph at lines 1--5
-\OMS/cmsy/m/n/10 ^^T$
- []
-
-
-Overfull \hbox (17.26382pt too wide) in paragraph at lines 1--5
-\OML/cmm/m/it/10 S \OMS/cmsy/m/n/10 ^^R
- []
-
-
-Overfull \hbox (7.80904pt too wide) in paragraph at lines 1--5
-\OML/cmm/m/it/10 P$
- []
-
-
-Overfull \hbox (11.75548pt too wide) in paragraph at lines 1--5
-\OT1/cmr/m/it/10 di-
- []
-
-
-Overfull \hbox (24.91641pt too wide) in paragraph at lines 1--5
-\OT1/cmr/m/it/10 rected
- []
-
-
-Overfull \hbox (24.86568pt too wide) in paragraph at lines 1--5
-\OML/cmm/m/it/10 x; y \OMS/cmsy/m/n/10 2
- []
-
-
-Overfull \hbox (6.70831pt too wide) in paragraph at lines 1--5
-\OML/cmm/m/it/10 S$
- []
-
-
-Overfull \hbox (14.5347pt too wide) in paragraph at lines 1--5
-\OML/cmm/m/it/10 z \OMS/cmsy/m/n/10 2
- []
-
-
-Overfull \hbox (6.70831pt too wide) in paragraph at lines 1--5
-\OML/cmm/m/it/10 S$
- []
-
-
-Overfull \hbox (16.27078pt too wide) in paragraph at lines 1--5
-\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 ^^T
- []
-
-
-Overfull \hbox (5.0903pt too wide) in paragraph at lines 1--5
-\OML/cmm/m/it/10 z$
- []
-
-
-Overfull \hbox (15.81711pt too wide) in paragraph at lines 1--5
-\OML/cmm/m/it/10 y \OMS/cmsy/m/n/10 ^^T
- []
-
-
-Overfull \hbox (5.0903pt too wide) in paragraph at lines 1--5
-\OML/cmm/m/it/10 z$ 
- []
-
-
-./content.tex:6: LaTeX Error: Missing \begin{document}.
+./content.tex:8: LaTeX Error: \begin{document} ended by \end{definition}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6   W
-       e say that \(S\) is \emph{downwards closed} if whenever \(x \in S\) a...
+l.8 \end{definition}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--9
+[]
+ []
+
+
+Overfull \hbox (7.80904pt too wide) in paragraph at lines 1--9
+\OML/cmm/m/it/10 P$
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 1--9
+\OMS/cmsy/m/n/10 ^^T$
+ []
+
+
+Overfull \hbox (17.26382pt too wide) in paragraph at lines 1--9
+\OML/cmm/m/it/10 S \OMS/cmsy/m/n/10 ^^R
+ []
+
+
+Overfull \hbox (7.80904pt too wide) in paragraph at lines 1--9
+\OML/cmm/m/it/10 P$
+ []
+
+
+Overfull \hbox (11.75548pt too wide) in paragraph at lines 1--9
+\OT1/cmr/m/it/10 di-
+ []
+
+
+Overfull \hbox (24.91641pt too wide) in paragraph at lines 1--9
+\OT1/cmr/m/it/10 rected
+ []
+
+
+Overfull \hbox (24.86568pt too wide) in paragraph at lines 1--9
+\OML/cmm/m/it/10 x; y \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (6.70831pt too wide) in paragraph at lines 1--9
+\OML/cmm/m/it/10 S$
+ []
+
+
+Overfull \hbox (14.5347pt too wide) in paragraph at lines 1--9
+\OML/cmm/m/it/10 z \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (6.70831pt too wide) in paragraph at lines 1--9
+\OML/cmm/m/it/10 S$
+ []
+
+
+Overfull \hbox (16.27078pt too wide) in paragraph at lines 1--9
+\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 ^^T
+ []
+
+
+Overfull \hbox (5.0903pt too wide) in paragraph at lines 1--9
+\OML/cmm/m/it/10 z$
+ []
+
+
+Overfull \hbox (15.81711pt too wide) in paragraph at lines 1--9
+\OML/cmm/m/it/10 y \OMS/cmsy/m/n/10 ^^T
+ []
+
+
+Overfull \hbox (5.0903pt too wide) in paragraph at lines 1--9
+\OML/cmm/m/it/10 z$
+ []
+
+
+./content.tex:10: LaTeX Error: Environment definition undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \begin{definition}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./content.tex:12: Undefined control sequence.
+l.12   \lean
+            {IsLowerSet}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./content.tex:12: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12   \lean{I
+              sLowerSet}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no I in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+./content.tex:13: Undefined control sequence.
+l.13   \leanok
+              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 Missing character: There is no W in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -282,81 +363,171 @@ Missing character: There is no v in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 6--7
-[]
- []
-
-
-Overfull \hbox (6.70831pt too wide) in paragraph at lines 6--7
-\OML/cmm/m/it/10 S$
- []
-
-
-Overfull \hbox (26.06651pt too wide) in paragraph at lines 6--7
-\OT1/cmr/m/it/10 down-
- []
-
-
-Overfull \hbox (24.66095pt too wide) in paragraph at lines 6--7
-\OT1/cmr/m/it/10 wards
- []
-
-
-Overfull \hbox (25.55537pt too wide) in paragraph at lines 6--7
-\OT1/cmr/m/it/10 closed
- []
-
-
-Overfull \hbox (15.15967pt too wide) in paragraph at lines 6--7
-\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 2
- []
-
-
-Overfull \hbox (6.70831pt too wide) in paragraph at lines 6--7
-\OML/cmm/m/it/10 S$
- []
-
-
-Overfull \hbox (15.81711pt too wide) in paragraph at lines 6--7
-\OML/cmm/m/it/10 y \OMS/cmsy/m/n/10 ^^T
- []
-
-
-Overfull \hbox (5.71527pt too wide) in paragraph at lines 6--7
-\OML/cmm/m/it/10 x$
- []
-
-
-Overfull \hbox (14.706pt too wide) in paragraph at lines 6--7
-\OML/cmm/m/it/10 y \OMS/cmsy/m/n/10 2
- []
-
-
-Overfull \hbox (6.70831pt too wide) in paragraph at lines 6--7
-\OML/cmm/m/it/10 S$ 
- []
-
-
-./content.tex:8: LaTeX Error: Missing \begin{document}.
+./content.tex:15: LaTeX Error: \begin{document} ended by \end{definition}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8   I
-       f \(S\) is both directed and downwards closed, we call \(S\) an \emph...
+l.15 \end{definition}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 12--16
+[]
+ []
+
+
+Overfull \hbox (6.70831pt too wide) in paragraph at lines 12--16
+\OML/cmm/m/it/10 S$
+ []
+
+
+Overfull \hbox (26.06651pt too wide) in paragraph at lines 12--16
+\OT1/cmr/m/it/10 down-
+ []
+
+
+Overfull \hbox (24.66095pt too wide) in paragraph at lines 12--16
+\OT1/cmr/m/it/10 wards
+ []
+
+
+Overfull \hbox (25.55537pt too wide) in paragraph at lines 12--16
+\OT1/cmr/m/it/10 closed
+ []
+
+
+Overfull \hbox (15.15967pt too wide) in paragraph at lines 12--16
+\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (6.70831pt too wide) in paragraph at lines 12--16
+\OML/cmm/m/it/10 S$
+ []
+
+
+Overfull \hbox (15.81711pt too wide) in paragraph at lines 12--16
+\OML/cmm/m/it/10 y \OMS/cmsy/m/n/10 ^^T
+ []
+
+
+Overfull \hbox (5.71527pt too wide) in paragraph at lines 12--16
+\OML/cmm/m/it/10 x$
+ []
+
+
+Overfull \hbox (14.706pt too wide) in paragraph at lines 12--16
+\OML/cmm/m/it/10 y \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (6.70831pt too wide) in paragraph at lines 12--16
+\OML/cmm/m/it/10 S$
+ []
+
+
+./content.tex:17: LaTeX Error: Environment definition undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 \begin{definition}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./content.tex:18: Undefined control sequence.
+l.18   \lean
+            {Order.Ideal}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./content.tex:18: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18   \lean{O
+              rder.Ideal}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no O in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+./content.tex:19: Undefined control sequence.
+l.19   \uses
+            {def:directed, def:lower}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+./content.tex:20: Undefined control sequence.
+l.20   \leanok
+              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 Missing character: There is no I in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
-Missing character: There is no b in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
-Missing character: There is no h in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no , in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -396,75 +567,130 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no . in font nullfont!
 
-./content.tex:9: LaTeX Error: \begin{document} ended by \end{definition}.
+./content.tex:22: LaTeX Error: \begin{document} ended by \end{definition}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9 \end{definition}
-                    
+l.22 \end{definition}
+                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 8--10
+Overfull \hbox (20.0pt too wide) in paragraph at lines 18--23
 []
  []
 
 
-Overfull \hbox (6.70831pt too wide) in paragraph at lines 8--10
+Overfull \hbox (6.70831pt too wide) in paragraph at lines 18--23
 \OML/cmm/m/it/10 S$
  []
 
 
-Overfull \hbox (6.70831pt too wide) in paragraph at lines 8--10
+Overfull \hbox (6.70831pt too wide) in paragraph at lines 18--23
 \OML/cmm/m/it/10 S$
  []
 
 
-Overfull \hbox (19.9332pt too wide) in paragraph at lines 8--10
+Overfull \hbox (19.9332pt too wide) in paragraph at lines 18--23
 \OT1/cmr/m/it/10 ideal
  []
 
 
-Overfull \hbox (7.80904pt too wide) in paragraph at lines 8--10
+Overfull \hbox (7.80904pt too wide) in paragraph at lines 18--23
 \OML/cmm/m/it/10 P$
  []
 
 
-./content.tex:11: LaTeX Error: Environment lemma undefined.
+./content.tex:24: LaTeX Error: Environment lemma undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.11 \begin{lemma}
+l.24 \begin{lemma}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+./content.tex:25: Undefined control sequence.
+l.25   \lean
+            {Order.downset_ideal}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-./content.tex:12: LaTeX Error: Missing \begin{document}.
+
+./content.tex:25: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.12   F
-        or all \(x \in P\), the set \(\downarrow x = \left\{y \in P \vert y ...
-
+l.25   \lean{O
+              rder.downset_ideal}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-Missing character: There is no F in font nullfont!
-Missing character: There is no o in font nullfont!
+Missing character: There is no O in font nullfont!
 Missing character: There is no r in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+./content.tex:25: Missing $ inserted.
+<inserted text> 
+                $
+l.25   \lean{Order.downset_
+                           ideal}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./content.tex:25: Extra }, or forgotten $.
+l.25   \lean{Order.downset_ideal}
+                                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./content.tex:26: Undefined control sequence.
+l.26   \leanok
+              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./content.tex:27: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27   For all \(
+                 x \in P\), the set \(\downarrow x = \left\{y \in P \vert y ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 Missing character: There is no , in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
@@ -485,74 +711,80 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no . in font nullfont!
 
-./content.tex:13: LaTeX Error: \begin{document} ended by \end{lemma}.
+./content.tex:28: LaTeX Error: \begin{document} ended by \end{lemma}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.13 \end{lemma}
+l.28 \end{lemma}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+./content.tex:28: Missing } inserted.
+<inserted text> 
+                }
+l.28 \end{lemma}
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 12--14
-[]
+
+Overfull \hbox (85.91963pt too wide) in paragraph at lines 25--29
+[]$[]\OML/cmm/m/it/10 dealForallx \OMS/cmsy/m/n/10 2
  []
 
 
-Overfull \hbox (15.15967pt too wide) in paragraph at lines 12--14
-\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 2
- []
-
-
-Overfull \hbox (7.80904pt too wide) in paragraph at lines 12--14
+Overfull \hbox (7.80904pt too wide) in paragraph at lines 25--29
 \OML/cmm/m/it/10 P$
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 12--14
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 25--29
 \OMS/cmsy/m/n/10 #
  []
 
 
-Overfull \hbox (16.27078pt too wide) in paragraph at lines 12--14
+Overfull \hbox (16.27078pt too wide) in paragraph at lines 25--29
 \OML/cmm/m/it/10 x \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (62.38065pt too wide) in paragraph at lines 12--14
+Overfull \hbox (62.38065pt too wide) in paragraph at lines 25--29
 []$
  []
 
 
-Overfull \hbox (7.80904pt too wide) in paragraph at lines 12--14
+Overfull \hbox (7.80904pt too wide) in paragraph at lines 25--29
 \OML/cmm/m/it/10 P$
  []
 
 
-./content.tex:15: LaTeX Error: Environment lemma undefined.
+./content.tex:30: LaTeX Error: Environment lemma undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.15 \begin{lemma}
+l.30 \begin{lemma}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./content.tex:16: LaTeX Error: Missing \begin{document}.
+./content.tex:31: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.16   S
+l.31   S
         uppose the poset \(P\) has binary joins \(\vee\) and \(S \subseteq P...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -676,78 +908,105 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-./content.tex:18: LaTeX Error: \begin{document} ended by \end{lemma}.
+./content.tex:33: LaTeX Error: \begin{document} ended by \end{lemma}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18 \end{lemma}
+l.33 \end{lemma}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 16--19
+Overfull \hbox (20.0pt too wide) in paragraph at lines 31--34
 []
  []
 
 
-Overfull \hbox (7.80904pt too wide) in paragraph at lines 16--19
+Overfull \hbox (7.80904pt too wide) in paragraph at lines 31--34
 \OML/cmm/m/it/10 P$
  []
 
 
-Overfull \hbox (6.66669pt too wide) in paragraph at lines 16--19
+Overfull \hbox (6.66669pt too wide) in paragraph at lines 31--34
 \OMS/cmsy/m/n/10 _$
  []
 
 
-Overfull \hbox (17.26382pt too wide) in paragraph at lines 16--19
+Overfull \hbox (17.26382pt too wide) in paragraph at lines 31--34
 \OML/cmm/m/it/10 S \OMS/cmsy/m/n/10 ^^R
  []
 
 
-Overfull \hbox (7.80904pt too wide) in paragraph at lines 16--19
+Overfull \hbox (7.80904pt too wide) in paragraph at lines 31--34
 \OML/cmm/m/it/10 P$
  []
 
 
-Overfull \hbox (7.80904pt too wide) in paragraph at lines 16--19
+Overfull \hbox (7.80904pt too wide) in paragraph at lines 31--34
 \OML/cmm/m/it/10 P$
  []
 
 
-Overfull \hbox (7.80904pt too wide) in paragraph at lines 16--19
+Overfull \hbox (7.80904pt too wide) in paragraph at lines 31--34
 \OML/cmm/m/it/10 P$
  []
 
 
-./content.tex:20: LaTeX Error: Environment definition undefined.
+./content.tex:35: LaTeX Error: Environment definition undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.20 \begin{definition}
+l.35 \begin{definition}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+./content.tex:36: Undefined control sequence.
+l.36   \lean
+            {Order.Dcpo}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-./content.tex:21: LaTeX Error: Missing \begin{document}.
+
+./content.tex:36: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.21   W
-        henever a directed subset \(S \subseteq P\) has a join, we call it a...
-
+l.36   \lean{O
+              rder.Dcpo}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no O in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+./content.tex:37: Undefined control sequence.
+l.37   \leanok
+              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 Missing character: There is no W in font nullfont!
 Missing character: There is no h in font nullfont!
@@ -803,8 +1062,8 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no b in font nullfont!
 Missing character: There is no y in font nullfont!
-./content.tex:21: Undefined control sequence.
-l.21 ...directed join} and denote it by \(\dirjoin
+./content.tex:38: Undefined control sequence.
+l.38 ...directed join} and denote it by \(\dirjoin
                                                    S\). If \(P\) has all dir...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -855,129 +1114,129 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no . in font nullfont!
 
-./content.tex:22: LaTeX Error: \begin{document} ended by \end{definition}.
+./content.tex:39: LaTeX Error: \begin{document} ended by \end{definition}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.22 \end{definition}
+l.39 \end{definition}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 21--23
+Overfull \hbox (20.0pt too wide) in paragraph at lines 36--40
 []
  []
 
 
-Overfull \hbox (17.26382pt too wide) in paragraph at lines 21--23
+Overfull \hbox (17.26382pt too wide) in paragraph at lines 36--40
 \OML/cmm/m/it/10 S \OMS/cmsy/m/n/10 ^^R
  []
 
 
-Overfull \hbox (7.80904pt too wide) in paragraph at lines 21--23
+Overfull \hbox (7.80904pt too wide) in paragraph at lines 36--40
 \OML/cmm/m/it/10 P$
  []
 
 
-Overfull \hbox (11.75548pt too wide) in paragraph at lines 21--23
+Overfull \hbox (11.75548pt too wide) in paragraph at lines 36--40
 \OT1/cmr/m/it/10 di-
  []
 
 
-Overfull \hbox (24.91641pt too wide) in paragraph at lines 21--23
+Overfull \hbox (24.91641pt too wide) in paragraph at lines 36--40
 \OT1/cmr/m/it/10 rected
  []
 
 
-Overfull \hbox (16.86658pt too wide) in paragraph at lines 21--23
+Overfull \hbox (16.86658pt too wide) in paragraph at lines 36--40
 \OT1/cmr/m/it/10 join
  []
 
 
-Overfull \hbox (6.70831pt too wide) in paragraph at lines 21--23
+Overfull \hbox (6.70831pt too wide) in paragraph at lines 36--40
 \OML/cmm/m/it/10 S$
  []
 
 
-Overfull \hbox (7.80904pt too wide) in paragraph at lines 21--23
+Overfull \hbox (7.80904pt too wide) in paragraph at lines 36--40
 \OML/cmm/m/it/10 P$
  []
 
 
-Overfull \hbox (7.80904pt too wide) in paragraph at lines 21--23
+Overfull \hbox (7.80904pt too wide) in paragraph at lines 36--40
 \OML/cmm/m/it/10 P$
  []
 
 
-Overfull \hbox (11.75548pt too wide) in paragraph at lines 21--23
+Overfull \hbox (11.75548pt too wide) in paragraph at lines 36--40
 \OT1/cmr/m/it/10 di-
  []
 
 
-Overfull \hbox (24.91641pt too wide) in paragraph at lines 21--23
+Overfull \hbox (24.91641pt too wide) in paragraph at lines 36--40
 \OT1/cmr/m/it/10 rected
  []
 
 
-Overfull \hbox (20.9554pt too wide) in paragraph at lines 21--23
+Overfull \hbox (20.9554pt too wide) in paragraph at lines 36--40
 \OT1/cmr/m/it/10 com-
  []
 
 
-Overfull \hbox (20.18874pt too wide) in paragraph at lines 21--23
+Overfull \hbox (20.18874pt too wide) in paragraph at lines 36--40
 \OT1/cmr/m/it/10 plete
  []
 
 
-Overfull \hbox (17.50542pt too wide) in paragraph at lines 21--23
+Overfull \hbox (17.50542pt too wide) in paragraph at lines 36--40
 \OT1/cmr/m/it/10 par-
  []
 
 
-Overfull \hbox (14.05547pt too wide) in paragraph at lines 21--23
+Overfull \hbox (14.05547pt too wide) in paragraph at lines 36--40
 \OT1/cmr/m/it/10 tial
  []
 
 
-Overfull \hbox (12.90546pt too wide) in paragraph at lines 21--23
+Overfull \hbox (12.90546pt too wide) in paragraph at lines 36--40
 \OT1/cmr/m/it/10 or-
  []
 
 
-Overfull \hbox (13.92767pt too wide) in paragraph at lines 21--23
+Overfull \hbox (13.92767pt too wide) in paragraph at lines 36--40
 \OT1/cmr/m/it/10 der
  []
 
 
-Overfull \hbox (19.42209pt too wide) in paragraph at lines 21--23
+Overfull \hbox (19.42209pt too wide) in paragraph at lines 36--40
 \OT1/cmr/m/it/10 dcpo
  []
 
 
-./content.tex:24: LaTeX Error: Environment lemma undefined.
+./content.tex:41: LaTeX Error: Environment lemma undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.24 \begin{lemma}
+l.41 \begin{lemma}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./content.tex:25: LaTeX Error: Missing \begin{document}.
+./content.tex:42: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.25   T
+l.42   T
         o construct arbitrary joins in a dcpo \(P\), it suffices to construc...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -1163,31 +1422,457 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-./content.tex:26: LaTeX Error: \begin{document} ended by \end{lemma}.
+./content.tex:43: LaTeX Error: \begin{document} ended by \end{lemma}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.26 \end{lemma}
+l.43 \end{lemma}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 25--27
+Overfull \hbox (20.0pt too wide) in paragraph at lines 42--44
 []
  []
 
 
-Overfull \hbox (7.80904pt too wide) in paragraph at lines 25--27
+Overfull \hbox (7.80904pt too wide) in paragraph at lines 42--44
 \OML/cmm/m/it/10 P$
  []
 
-./content.tex:28: Undefined control sequence.
-l.28 \section
-             {Ideal completions}
+
+./content.tex:45: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 S
+      uppose now that \(P\) and \(Q\) are dcpos and \(f : P \to Q\) a monoto...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 45--46
+[]
+ []
+
+
+Overfull \hbox (7.80904pt too wide) in paragraph at lines 45--46
+\OML/cmm/m/it/10 P$
+ []
+
+
+Overfull \hbox (7.90555pt too wide) in paragraph at lines 45--46
+\OML/cmm/m/it/10 Q$
+ []
+
+
+Overfull \hbox (11.52776pt too wide) in paragraph at lines 45--46
+\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (20.58676pt too wide) in paragraph at lines 45--46
+\OML/cmm/m/it/10 P \OMS/cmsy/m/n/10 !
+ []
+
+
+Overfull \hbox (7.90555pt too wide) in paragraph at lines 45--46
+\OML/cmm/m/it/10 Q$
+ []
+
+
+Overfull \hbox (5.97226pt too wide) in paragraph at lines 45--46
+\OML/cmm/m/it/10 f$
+ []
+
+
+./content.tex:47: LaTeX Error: Environment lemma undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 \begin{lemma}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./content.tex:48: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48   T
+        he function \(f\) preserves directed sets. More precisely, if \(S\) ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+
+./content.tex:49: LaTeX Error: \begin{document} ended by \end{lemma}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 \end{lemma}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 48--50
+[]
+ []
+
+
+Overfull \hbox (5.97226pt too wide) in paragraph at lines 48--50
+\OML/cmm/m/it/10 f$
+ []
+
+
+Overfull \hbox (6.70831pt too wide) in paragraph at lines 48--50
+\OML/cmm/m/it/10 S$
+ []
+
+
+Overfull \hbox (7.80904pt too wide) in paragraph at lines 48--50
+\OML/cmm/m/it/10 P$
+ []
+
+
+Overfull \hbox (54.8333pt too wide) in paragraph at lines 48--50
+[]$
+ []
+
+
+Overfull \hbox (7.90555pt too wide) in paragraph at lines 48--50
+\OML/cmm/m/it/10 Q$
+ []
+
+
+./content.tex:51: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 S
+      ince \(f\) is monotone, one of the inequalities always holds.
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 51--52
+[]
+ []
+
+
+Overfull \hbox (5.97226pt too wide) in paragraph at lines 51--52
+\OML/cmm/m/it/10 f$
+ []
+
+
+./content.tex:53: LaTeX Error: Environment proposition undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 \begin{proposition}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./content.tex:54: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54   S
+        uppose \(S\) is a directed set. Then
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+./content.tex:55: Undefined control sequence.
+l.55   \(\dirjoin
+                  \left\{f(s) \vert s \in S\right\} \leq f(\dirjoin S).\)
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./content.tex:55: Undefined control sequence.
+l.55 ...f(s) \vert s \in S\right\} \leq f(\dirjoin
+                                                   S).\)
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1195,14 +1880,209 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./content.tex:28: LaTeX Error: Missing \begin{document}.
+./content.tex:56: LaTeX Error: \begin{document} ended by \end{proposition}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.28 \section{I
-               deal completions}
+l.56 \end{proposition}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 54--57
+[]
+ []
+
+
+Overfull \hbox (6.70831pt too wide) in paragraph at lines 54--57
+\OML/cmm/m/it/10 S$
+ []
+
+
+Overfull \hbox (65.38881pt too wide) in paragraph at lines 54--57
+[] \OMS/cmsy/m/n/10 ^^T
+ []
+
+
+Overfull \hbox (23.23616pt too wide) in paragraph at lines 54--57
+\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 S\OT1/cmr/m/n/10 )\OML/cmm/
+m/it/10 :$
+ []
+
+
+./content.tex:58: LaTeX Error: Environment definition undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \begin{definition}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./content.tex:59: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59   W
+        e say that the function \(f\) is \emph{Scott continuous} if for ever...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no W in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+./content.tex:59: Undefined control sequence.
+l.59 ...for every directed set \(S\), \(f(\dirjoin
+                                                   S) \leq \dirjoin \left\{f...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./content.tex:59: Undefined control sequence.
+l.59 ...d set \(S\), \(f(\dirjoin S) \leq \dirjoin
+                                                   \left\{f(s) \vert s \in S...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./content.tex:60: LaTeX Error: \begin{document} ended by \end{definition}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 \end{definition}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 59--61
+[]
+ []
+
+
+Overfull \hbox (5.97226pt too wide) in paragraph at lines 59--61
+\OML/cmm/m/it/10 f$
+ []
+
+
+Overfull \hbox (21.46649pt too wide) in paragraph at lines 59--61
+\OT1/cmr/m/it/10 Scott
+ []
+
+
+Overfull \hbox (18.39986pt too wide) in paragraph at lines 59--61
+\OT1/cmr/m/it/10 con-
+ []
+
+
+Overfull \hbox (15.58878pt too wide) in paragraph at lines 59--61
+\OT1/cmr/m/it/10 tin-
+ []
+
+
+Overfull \hbox (8.94438pt too wide) in paragraph at lines 59--61
+\OT1/cmr/m/it/10 u-
+ []
+
+
+Overfull \hbox (14.56659pt too wide) in paragraph at lines 59--61
+\OT1/cmr/m/it/10 ous
+ []
+
+
+Overfull \hbox (6.70831pt too wide) in paragraph at lines 59--61
+\OML/cmm/m/it/10 S$
+ []
+
+
+Overfull \hbox (31.01389pt too wide) in paragraph at lines 59--61
+\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 S\OT1/cmr/m/n/10 ) \OMS/cms
+y/m/n/10 ^^T
+ []
+
+
+Overfull \hbox (54.8333pt too wide) in paragraph at lines 59--61
+[]$
+ []
+
+./content.tex:62: Undefined control sequence.
+l.62 \chapter
+             {Ideal completion}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./content.tex:62: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 \chapter{I
+               deal completion}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1221,33 +2101,32 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no s in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 28--29
+Overfull \hbox (20.0pt too wide) in paragraph at lines 62--63
 []
  []
 
 
-./content.tex:30: LaTeX Error: Environment definition undefined.
+./content.tex:64: LaTeX Error: Environment definition undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.30 \begin{definition}
+l.64 \begin{definition}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./content.tex:31: LaTeX Error: Missing \begin{document}.
+./content.tex:65: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.31   W
+l.65   W
         e define \(\idl(P)\) to be the set of all ideals of \(P\) and call i...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -1261,8 +2140,8 @@ Missing character: There is no f in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
-./content.tex:31: Undefined control sequence.
-l.31   We define \(\idl
+./content.tex:65: Undefined control sequence.
+l.65   We define \(\idl
                        (P)\) to be the set of all ideals of \(P\) and call i...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1303,25 +2182,14 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no I in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no t in font nullfont!
+Missing character: There is no T in font nullfont!
 Missing character: There is no h in font nullfont!
-Missing character: There is no a in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
 Missing character: There is no t in font nullfont!
-./content.tex:31: Undefined control sequence.
-l.31 ...n of \(P\)}. It is easy to see that \(\idl
+./content.tex:65: Undefined control sequence.
+l.65 ...ideal completion of \(P\)}. The set \(\idl
                                                   (P)\) forms a poset under ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1360,19 +2228,120 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no t in font nullfont!
+Missing character: There is no . in font nullfont!
+
+./content.tex:66: LaTeX Error: \begin{document} ended by \end{definition}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 \end{definition}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 65--67
+[]
+ []
+
+
+Overfull \hbox (15.58684pt too wide) in paragraph at lines 65--67
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (7.80904pt too wide) in paragraph at lines 65--67
+\OML/cmm/m/it/10 P$
+ []
+
+
+Overfull \hbox (13.03323pt too wide) in paragraph at lines 65--67
+\OT1/cmr/m/it/10 the
+ []
+
+
+Overfull \hbox (19.9332pt too wide) in paragraph at lines 65--67
+\OT1/cmr/m/it/10 ideal
+ []
+
+
+Overfull \hbox (20.9554pt too wide) in paragraph at lines 65--67
+\OT1/cmr/m/it/10 com-
+ []
+
+
+Overfull \hbox (15.84433pt too wide) in paragraph at lines 65--67
+\OT1/cmr/m/it/10 ple-
+ []
+
+
+Overfull \hbox (17.12212pt too wide) in paragraph at lines 65--67
+\OT1/cmr/m/it/10 tion
+ []
+
+
+Overfull \hbox (8.17773pt too wide) in paragraph at lines 65--67
+\OT1/cmr/m/it/10 of
+ []
+
+
+Overfull \hbox (7.80904pt too wide) in paragraph at lines 65--67
+\OML/cmm/m/it/10 P$
+ []
+
+
+Overfull \hbox (15.58684pt too wide) in paragraph at lines 65--67
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 )$
+ []
+
+
+./content.tex:68: LaTeX Error: Environment proposition undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 \begin{proposition}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./content.tex:69: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69   T
+        he assignment \(x \mapsto \downarrow x\) defines a monotone function...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no T in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
 Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no m in font nullfont!
@@ -1391,152 +2360,144 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
-./content.tex:31: Undefined control sequence.
-l.31 ...is a monotone function \(\eta : P \to \idl
-                                                  (P)\), given by \(\eta(x) ...
+./content.tex:69: Undefined control sequence.
+l.69 ...es a monotone function \(\eta : P \to \idl
+                                                  (P)\).
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no , in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no y in font nullfont!
 Missing character: There is no . in font nullfont!
 
-./content.tex:32: LaTeX Error: \begin{document} ended by \end{definition}.
+./content.tex:70: LaTeX Error: \begin{document} ended by \end{proposition}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.32 \end{definition}
-                     
+l.70 \end{proposition}
+                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 31--33
+Overfull \hbox (20.0pt too wide) in paragraph at lines 69--71
 []
  []
 
 
-Overfull \hbox (15.58684pt too wide) in paragraph at lines 31--33
-\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 )$
+Overfull \hbox (23.49301pt too wide) in paragraph at lines 69--71
+\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 7!#
  []
 
 
-Overfull \hbox (7.80904pt too wide) in paragraph at lines 31--33
-\OML/cmm/m/it/10 P$
- []
-
-
-Overfull \hbox (13.03323pt too wide) in paragraph at lines 31--33
-\OT1/cmr/m/it/10 the
- []
-
-
-Overfull \hbox (19.9332pt too wide) in paragraph at lines 31--33
-\OT1/cmr/m/it/10 ideal
- []
-
-
-Overfull \hbox (20.9554pt too wide) in paragraph at lines 31--33
-\OT1/cmr/m/it/10 com-
- []
-
-
-Overfull \hbox (15.84433pt too wide) in paragraph at lines 31--33
-\OT1/cmr/m/it/10 ple-
- []
-
-
-Overfull \hbox (17.12212pt too wide) in paragraph at lines 31--33
-\OT1/cmr/m/it/10 tion
- []
-
-
-Overfull \hbox (8.17773pt too wide) in paragraph at lines 31--33
-\OT1/cmr/m/it/10 of
- []
-
-
-Overfull \hbox (7.80904pt too wide) in paragraph at lines 31--33
-\OML/cmm/m/it/10 P$
- []
-
-
-Overfull \hbox (15.58684pt too wide) in paragraph at lines 31--33
-\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 )$
- []
-
-
-Overfull \hbox (10.87958pt too wide) in paragraph at lines 31--33
-\OML/cmm/m/it/10 ^^Q \OT1/cmr/m/n/10 :
- []
-
-
-Overfull \hbox (20.58676pt too wide) in paragraph at lines 31--33
-\OML/cmm/m/it/10 P \OMS/cmsy/m/n/10 !
- []
-
-
-Overfull \hbox (15.58684pt too wide) in paragraph at lines 31--33
-\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 )$
- []
-
-
-Overfull \hbox (34.37268pt too wide) in paragraph at lines 31--33
-\OML/cmm/m/it/10 ^^Q\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) =\OMS/
-cmsy/m/n/10 #
- []
-
-
-Overfull \hbox (5.71527pt too wide) in paragraph at lines 31--33
+Overfull \hbox (5.71527pt too wide) in paragraph at lines 69--71
 \OML/cmm/m/it/10 x$
  []
 
 
-./content.tex:34: LaTeX Error: Environment proposition undefined.
+Overfull \hbox (10.87958pt too wide) in paragraph at lines 69--71
+\OML/cmm/m/it/10 ^^Q \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (20.58676pt too wide) in paragraph at lines 69--71
+\OML/cmm/m/it/10 P \OMS/cmsy/m/n/10 !
+ []
+
+
+Overfull \hbox (15.58684pt too wide) in paragraph at lines 69--71
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 )$
+ []
+
+
+./content.tex:72: LaTeX Error: Environment proposition undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.34 \begin{proposition}
+l.72 \begin{proposition}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./content.tex:35: LaTeX Error: Missing \begin{document}.
+./content.tex:73: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.35   T
-        he set \(\idl(P)\) is a dcpo, with directed joins given by unions.
+l.73   T
+        he union of a directed family of ideals is an ideal. Consequently, \...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no T in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no e in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
-./content.tex:35: Undefined control sequence.
-l.35   The set \(\idl
-                     (P)\) is a dcpo, with directed joins given by unions.
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no , in font nullfont!
+./content.tex:73: Undefined control sequence.
+l.73 ...f ideals is an ideal. Consequently, \(\idl
+                                                  (P)\) is a dcpo.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1550,90 +2511,486 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no o in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no w in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no j in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-./content.tex:36: LaTeX Error: \begin{document} ended by \end{proposition}.
+./content.tex:74: LaTeX Error: \begin{document} ended by \end{proposition}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.36 \end{proposition}
+l.74 \end{proposition}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 35--37
+Overfull \hbox (20.0pt too wide) in paragraph at lines 73--75
 []
  []
 
 
-Overfull \hbox (15.58684pt too wide) in paragraph at lines 35--37
+Overfull \hbox (15.58684pt too wide) in paragraph at lines 73--75
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 )$
  []
 
 
-./content.tex:38: LaTeX Error: Missing \begin{document}.
+./content.tex:76: LaTeX Error: Environment theorem undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.38 m
-      jau
+l.76 \begin{theorem}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./content.tex:77: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.77   T
+        he poset \(\idl(P)\) forms the free dcpo over \(P\) with unit \(\eta...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+./content.tex:77: Undefined control sequence.
+l.77   The poset \(\idl
+                       (P)\) forms the free dcpo over \(P\) with unit \(\eta...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
 Missing character: There is no m in font nullfont!
-Missing character: There is no j in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+./content.tex:78: Undefined control sequence.
+l.78   \(\overline{f} : \idl
+                            (P) \to Q\), such that \(\overline{f}(\downarrow...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 38--39
-[] 
- []
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+./content.tex:79: Undefined control sequence.
+l.79   \(I \mapsto \dirjoin
+                            \left\{ f(x) \vert x \in I \right\}\).
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
+Missing character: There is no . in font nullfont!
 
-./content.tex:40: LaTeX Error: Missing \begin{document}.
+./content.tex:80: LaTeX Error: \begin{document} ended by \end{theorem}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.40 F
+l.80 \end{theorem}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 77--81
+[]
+ []
+
+
+Overfull \hbox (15.58684pt too wide) in paragraph at lines 77--81
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (7.80904pt too wide) in paragraph at lines 77--81
+\OML/cmm/m/it/10 P$
+ []
+
+
+Overfull \hbox (5.32408pt too wide) in paragraph at lines 77--81
+\OML/cmm/m/it/10 ^^Q$
+ []
+
+
+Overfull \hbox (7.90555pt too wide) in paragraph at lines 77--81
+\OML/cmm/m/it/10 Q$
+ []
+
+
+Overfull \hbox (11.52776pt too wide) in paragraph at lines 77--81
+\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (20.58676pt too wide) in paragraph at lines 77--81
+\OML/cmm/m/it/10 P \OMS/cmsy/m/n/10 !
+ []
+
+
+Overfull \hbox (7.90555pt too wide) in paragraph at lines 77--81
+\OML/cmm/m/it/10 Q$
+ []
+
+
+Overfull \hbox (11.52776pt too wide) in paragraph at lines 77--81
+[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (28.36456pt too wide) in paragraph at lines 77--81
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 !
+ []
+
+
+Overfull \hbox (7.90555pt too wide) in paragraph at lines 77--81
+\OML/cmm/m/it/10 Q$
+ []
+
+
+Overfull \hbox (14.86118pt too wide) in paragraph at lines 77--81
+[]\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 #
+ []
+
+
+Overfull \hbox (20.15968pt too wide) in paragraph at lines 77--81
+\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (19.46533pt too wide) in paragraph at lines 77--81
+\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (15.15967pt too wide) in paragraph at lines 77--81
+\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (7.80904pt too wide) in paragraph at lines 77--81
+\OML/cmm/m/it/10 P$
+ []
+
+
+Overfull \hbox (5.97226pt too wide) in paragraph at lines 77--81
+[]$
+ []
+
+
+Overfull \hbox (17.95827pt too wide) in paragraph at lines 77--81
+\OML/cmm/m/it/10 I \OMS/cmsy/m/n/10 7!
+ []
+
+
+Overfull \hbox (55.36107pt too wide) in paragraph at lines 77--81
+[]$
+ []
+
+
+./content.tex:82: LaTeX Error: Environment corollary undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.82 \begin{corollary}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./content.tex:83: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83   T
+        he assignment \(P \mapsto \idl(P)\) is functorial.
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+./content.tex:83: Undefined control sequence.
+l.83   The assignment \(P \mapsto \idl
+                                      (P)\) is functorial.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no . in font nullfont!
+
+./content.tex:84: LaTeX Error: \begin{document} ended by \end{corollary}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84 \end{corollary}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 83--85
+[]
+ []
+
+
+Overfull \hbox (20.58676pt too wide) in paragraph at lines 83--85
+\OML/cmm/m/it/10 P \OMS/cmsy/m/n/10 7!
+ []
+
+
+Overfull \hbox (15.58684pt too wide) in paragraph at lines 83--85
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 )$
+ []
+
+
+./content.tex:86: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.86 A
+      ny additional joins and
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no A in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 86--87
+[]
+ []
+
+
+./content.tex:88: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 F
       or my project, I would like to formalize the stone duality and some re...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -2448,10 +3805,10 @@ Missing character: There is no . in font nullfont!
 
  
 Here is how much of TeX's memory you used:
- 30 strings out of 476076
- 665 string characters out of 5789100
- 1928187 words of memory out of 5000000
- 22236 multiletter control sequences out of 15000+600000
+ 36 strings out of 476076
+ 807 string characters out of 5789100
+ 1930187 words of memory out of 5000000
+ 22242 multiletter control sequences out of 15000+600000
  558415 words of font info for 37 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  18i,2n,20p,442b,63s stack positions out of 10000i,1000n,20000p,200000b,200000s

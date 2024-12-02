@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1732822694.69859 "print.tex" "/home/mabel/workspace/mag2/formath/stone-duality/blueprint/print/print.pdf" "print" 1732822695.55812 0
-  "/home/mabel/workspace/mag2/formath/stone-duality/blueprint/print/print.aux" 1732822695.45327 383 68be466707d13929ae51daac06745f69 "pdflatex"
-  "/home/mabel/workspace/mag2/formath/stone-duality/blueprint/print/print.out" 1732822695.45327 243 da230c1ef6550705879906e556347c7b "pdflatex"
+["pdflatex"] 1733174401.29476 "print.tex" "/home/mabel/workspace/mag2/formath/stone-duality/blueprint/print/print.pdf" "print" 1733174403.77177 0
+  "/home/mabel/workspace/mag2/formath/stone-duality/blueprint/print/print.aux" 1733174403.4819 617 68361315053aad985d3b5a76b3c95b82 "pdflatex"
+  "/home/mabel/workspace/mag2/formath/stone-duality/blueprint/print/print.out" 1733174403.4829 234 148d5b264db308613a756e2bae3a3143 "pdflatex"
   "/nix/store/bcs6vb349c5dz5n034y832jkplbqvpnv-texlive-combined-2023-texmfdist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/nix/store/bcs6vb349c5dz5n034y832jkplbqvpnv-texlive-combined-2023-texmfdist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/nix/store/bcs6vb349c5dz5n034y832jkplbqvpnv-texlive-combined-2023-texmfdist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -82,7 +82,7 @@
   "/nix/store/bcs6vb349c5dz5n034y832jkplbqvpnv-texlive-combined-2023-texmfdist/tex/latex/url/url.sty" 1 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/nix/store/d52wb10zpmx9bnpq0bfbh79kv8hp8s7x-texlive-combined-2023/share/texmf-var/web2c/texmf.cnf" 1 42803 17de3862f617f2d38da2172a56ae081d ""
   "/nix/store/d52wb10zpmx9bnpq0bfbh79kv8hp8s7x-texlive-combined-2023/share/texmf-var/web2c/xetex/xelatex.fmt" 1 9061835 f114b68b2bbe7dd3f07fdb10b6fa79a3 ""
-  "content.tex" 1732822670.37489 2870 77543dccd246e2ea1c88f4a76f7a9ba0 ""
+  "content.tex" 1733174383.34664 5032 90f7adb7c1a725d1d51b94be45d59168 ""
   "macros/common.tex" 1732708434.24028 1048 93ca1621e88c50bba5e2ddf9160397e3 ""
   "macros/print.tex" 1732645354.96039 1101 87627b2ec24fef68edc71c13f43f7bab ""
   "print.tex" 1732821834.24899 1190 37ac497d9eb6f09ec201cb622a7e0b71 ""

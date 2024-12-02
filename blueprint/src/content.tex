@@ -1,15 +1,30 @@
-\section{Preliminaries}
+\chapter{Preliminaries}
 Suppose throughout that \(P\) is a poset with order relation \(\leq\).
 \begin{definition}
-  \lean{Order.Directed}
-  We say that a subset \(S \subseteq P\) is \emph{directed} if it is both nonempty and for every \(x, y \in S\) there exists \(z \in S\), such that \(x \leq z\) and \(y \leq z\).
-  We say that \(S\) is \emph{downwards closed} if whenever \(x \in S\) and \(y \leq x\), we also have \(y \in S\).
+  \label{def:directed}
+  \lean{DirectedOn}
+  \leanok
+  We say that a subset \(S \subseteq P\) is \emph{directed} if for every \(x, y \in S\) there exists \(z \in S\), such that \(x \leq z\) and \(y \leq z\).
+\end{definition}
 
-  If \(S\) is both directed and downwards closed, we call \(S\) an \emph{ideal} of \(P\).
+\begin{definition}
+  \label{def:lower}
+  \lean{IsLowerSet}
+  \leanok
+  We say that \(S\) is \emph{downwards closed} if whenever \(x \in S\) and \(y \leq x\), we also have \(y \in S\).
+\end{definition}
+
+\begin{definition}
+  \lean{Order.Ideal}
+  \uses{def:directed, def:lower}
+  \leanok
+  If \(S\) is nonempty, directed and downwards closed, we call \(S\) an \emph{ideal} of \(P\).
 \end{definition}
 
 \begin{lemma}
-  For all \(x \in P\), the set \(\downarrow x = \left\{y \in P \vert y \leq x\right\}\) is an ideal of \(P\).
+  \lean{Order.downset_ideal}
+  \leanok
+  For all \(x \in P\), the set \(\downset{x} = \left\{y \in P \vert y \leq x\right\}\) is an ideal of \(P\).
 \end{lemma}
 
 \begin{lemma}
@@ -18,6 +33,8 @@ Suppose throughout that \(P\) is a poset with order relation \(\leq\).
 \end{lemma}
 
 \begin{definition}
+  \lean{Order.Dcpo}
+  \leanok
   Whenever a directed subset \(S \subseteq P\) has a join, we call it a \emph{directed join} and denote it by \(\dirjoin S\). If \(P\) has all directed joins, we call \(P\) a \emph{directed complete partial order}, or \emph{dcpo} for short.
 \end{definition}
 
@@ -25,17 +42,58 @@ Suppose throughout that \(P\) is a poset with order relation \(\leq\).
   To construct arbitrary joins in a dcpo \(P\), it suffices to construct all finite joins. Furthermore, to show meets distribute over arbitrary joins, it suffices to show they distribute overy directed and finite joins.
 \end{lemma}
 
-\section{Ideal completions}
+Suppose now that \(P\) and \(Q\) are dcpos and \(f : P \to Q\) a monotone function. We define what it means for \(f\) to preserve directed joins.
+
+\begin{lemma}
+  The function \(f\) preserves directed sets. More precisely, if \(S\) is a directed set in \(P\), then \( \left\{ f(s) \vert s \in S \right\}\) is a directed set in \(Q\).
+\end{lemma}
+
+Since \(f\) is monotone, one of the inequalities always holds.
+
+\begin{proposition}
+  Suppose \(S\) is a directed set. Then
+  \(\dirjoin \left\{f(s) \vert s \in S\right\} \leq f(\dirjoin S).\)
+\end{proposition}
 
 \begin{definition}
-  We define \(\idl(P)\) to be the set of all ideals of \(P\) and call it \emph{the ideal completion of \(P\)}. It is easy to see that \(\idl(P)\) forms a poset under subset inclusion and that there is a monotone function \(\eta : P \to \idl(P)\), given by \(\eta(x) = \downarrow x\).
+  We say that the function \(f\) is \emph{Scott continuous} if for every directed set \(S\), \(f(\dirjoin S) \leq \dirjoin \left\{f(s) \vert s \in S\right\}\)
+\end{definition}
+
+\chapter{Ideal completion}
+
+\begin{definition}
+  We define \(\idl(P)\) to be the set of all ideals of \(P\) and call it \emph{the ideal completion of \(P\)}. The set \(\idl(P)\) forms a poset under subset inclusion.
 \end{definition}
 
 \begin{proposition}
-  The set \(\idl(P)\) is a dcpo, with directed joins given by unions.
+  The assignment \(x \mapsto \downset{x}\) defines a monotone function \(\eta : P \to \idl(P)\).
 \end{proposition}
 
-mjau
+\begin{proposition}
+  The union of a directed family of ideals is an ideal. Consequently, \(\idl(P)\) is a dcpo.
+\end{proposition}
+
+\begin{theorem}
+  The poset \(\idl(P)\) forms the free dcpo over \(P\) with unit \(\eta\). Given a dcpo \(Q\) and a monotone function \(f : P \to Q\), there exists a unique Scott continuous function
+  \(\overline{f} : \idl(P) \to Q\), such that \(\overline{f}(\downset{x}) = f(x)\) for all \(x \in P\).
+
+  The function \(\overline{f}\) is defined by the assignment \(I \mapsto \dirjoin \left\{ f(x) \vert x \in I \right\}\).
+\end{theorem}
+
+\begin{corollary}
+  The assignment \(P \mapsto \idl(P)\) is functorial.
+\end{corollary}
+
+Any additional joins and meets that exist in \(P\) also exist in \(\idl(P)\) and are preserved by \(\eta\).
+
+\begin{proposition}
+  Suppose \(P\) has all finite meets. Then so does \(\idl(P)\), with binary joins given by intersection and top element given by the ideal \(P\).
+  Since \(\downset{(x \bmeet y)} = \downset{x} \cap \downset{y}\) and \(\downset{1} = P\), the function \(\eta\) preserves all finite meets.
+\end{proposition}
+
+\begin{proposition}
+  Suppose \(P\) has all finite meets. Then meets distribute over directed joins in \(\idl(P)\).
+\end{proposition}
 
 For my project, I would like to formalize the stone duality and some related facts. We talked about the possibility of contributing to an existing formalization, but I think it would be good if I tried to plan out the project myself. I am also interested in isolating the constructive part of the proof, and possibly doing the classical part as a stretch goal. What I am planning to formalize is
 1. Given a poset P, construct its ideal completion Idl(P) and show that it forms the free dcpo over P. If P is a distributive lattice, show that it forms the free frame over P, call this the coherent frame over P.

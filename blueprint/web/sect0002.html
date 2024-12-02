@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  MathJax = { 
+    tex: {
+		    inlineMath: [['$','$'], ['\\(','\\)']]
+	} }
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<meta name="generator" content="plasTeX" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ideal completion</title>
+<link rel="prev" href="sect0001.html" title="Preliminaries" />
+<link rel="up" href="index.html" title="Localic Stone Duality" />
+<link rel="stylesheet" href="styles/theme-white.css" />
+<link rel="stylesheet" href="styles/amsthm.css" />
+<link rel="stylesheet" href="styles/showmore.css" />
+<link rel="stylesheet" href="styles/blueprint.css" />
+<link rel="stylesheet" href="styles/extra_styles.css" />
+</head>
+
+<body>
+<header>
+<svg  id="toc-toggle" class="icon icon-list-numbered "><use xlink:href="symbol-defs.svg#icon-list-numbered"></use></svg>
+<h1 id="doc_title"><a href="index.html">Localic Stone Duality</a></h1>
+</header>
+
+<div class="wrapper">
+<nav class="toc">
+<ul class="sub-toc-0">
+<li class="">
+  <a href="sect0001.html"><span class="toc_ref">1</span> <span class="toc_entry">Preliminaries</span></a>
+ </li>
+<li class=" active current">
+  <a href="sect0002.html"><span class="toc_ref">2</span> <span class="toc_entry">Ideal completion</span></a>
+ </li>
+<li ><a href="dep_graph_document.html">Dependency graph</a></li>
+</ul>
+</nav>
+
+<div class="content">
+<div class="content-wrapper">
+
+
+<div class="main-text">
+<h1 id="a0000000003">2 Ideal completion</h1>
+<div class="definition_thmwrapper theorem-style-definition" id="a0000000012">
+  <div class="definition_thmheading">
+    <span class="definition_thmcaption">
+    Definition
+    </span>
+    <span class="definition_thmlabel">11</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="sect0002.html#a0000000012">#</a>
+    
+    
+    
+        </div>
+  </div>
+  <div class="definition_thmcontent">
+  <p>We define \(\operatorname{Idl}(P)\) to be the set of all ideals of \(P\) and call it <em>the ideal completion of \(P\)</em>. The set \(\operatorname{Idl}(P)\) forms a poset under subset inclusion. </p>
+
+  </div>
+</div>
+<div class="proposition_thmwrapper theorem-style-plain" id="a0000000013">
+  <div class="proposition_thmheading">
+    <span class="proposition_thmcaption">
+    Proposition
+    </span>
+    <span class="proposition_thmlabel">12</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="sect0002.html#a0000000013">#</a>
+    
+    
+    
+        </div>
+  </div>
+  <div class="proposition_thmcontent">
+  <p>The assignment \(x \mapsto {\downarrow }x\) defines a monotone function \(\eta : P \to \operatorname{Idl}(P)\). </p>
+
+  </div>
+</div>
+<div class="proposition_thmwrapper theorem-style-plain" id="a0000000014">
+  <div class="proposition_thmheading">
+    <span class="proposition_thmcaption">
+    Proposition
+    </span>
+    <span class="proposition_thmlabel">13</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="sect0002.html#a0000000014">#</a>
+    
+    
+    
+        </div>
+  </div>
+  <div class="proposition_thmcontent">
+  <p>The union of a directed family of ideals is an ideal. Consequently, \(\operatorname{Idl}(P)\) is a dcpo. </p>
+
+  </div>
+</div>
+<div class="theorem_thmwrapper theorem-style-plain" id="a0000000015">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">14</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="sect0002.html#a0000000015">#</a>
+    
+    
+    
+        </div>
+  </div>
+  <div class="theorem_thmcontent">
+  <p>The poset \(\operatorname{Idl}(P)\) forms the free dcpo over \(P\) with unit \(\eta \). Given a dcpo \(Q\) and a monotone function \(f : P \to Q\), there exists a unique Scott continuous function \(\overline{f} : \operatorname{Idl}(P) \to Q\), such that \(\overline{f}(\dowset {x}) = f(x)\) for all \(x \in P\). </p>
+<p>The function \(\overline{f}\) is defined by the assignment \(I \mapsto \bigvee ^{\uparrow }\left\{  f(x) \vert x \in I \right\} \). </p>
+
+  </div>
+</div>
+<div class="corollary_thmwrapper theorem-style-plain" id="a0000000016">
+  <div class="corollary_thmheading">
+    <span class="corollary_thmcaption">
+    Corollary
+    </span>
+    <span class="corollary_thmlabel">15</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="sect0002.html#a0000000016">#</a>
+    
+    
+    
+        </div>
+  </div>
+  <div class="corollary_thmcontent">
+  <p>The assignment \(P \mapsto \operatorname{Idl}(P)\) is functorial. </p>
+
+  </div>
+</div>
+<p>Any additional joins and meets that exist in \(P\) also exist in \(\operatorname{Idl}(P)\) and are preserved by \(\eta \). </p>
+<div class="proposition_thmwrapper theorem-style-plain" id="a0000000017">
+  <div class="proposition_thmheading">
+    <span class="proposition_thmcaption">
+    Proposition
+    </span>
+    <span class="proposition_thmlabel">16</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="sect0002.html#a0000000017">#</a>
+    
+    
+    
+        </div>
+  </div>
+  <div class="proposition_thmcontent">
+  <p>Suppose \(P\) has all finite meets. Then so does \(\operatorname{Idl}(P)\), with binary joins given by intersection and top element given by the ideal \(P\). Since \({\downarrow }(x \wedge y) = {\downarrow }x \cap {\downarrow }y\) and \({\downarrow }1 = P\), the function \(\eta \) preserves all finite meets. </p>
+
+  </div>
+</div>
+<div class="proposition_thmwrapper theorem-style-plain" id="a0000000018">
+  <div class="proposition_thmheading">
+    <span class="proposition_thmcaption">
+    Proposition
+    </span>
+    <span class="proposition_thmlabel">17</span>
+    <div class="thm_header_extras">
+
+        </div>
+    <div class="thm_header_hidden_extras">
+
+    <a class="icon proof" href="sect0002.html#a0000000018">#</a>
+    
+    
+    
+        </div>
+  </div>
+  <div class="proposition_thmcontent">
+  <p>Suppose \(P\) has all finite meets. Then meets distribute over directed joins in \(\operatorname{Idl}(P)\). </p>
+
+  </div>
+</div>
+<p>For my project, I would like to formalize the stone duality and some related facts. We talked about the possibility of contributing to an existing formalization, but I think it would be good if I tried to plan out the project myself. I am also interested in isolating the constructive part of the proof, and possibly doing the classical part as a stretch goal. What I am planning to formalize is 1. Given a poset P, construct its ideal completion Idl(P) and show that it forms the free dcpo over P. If P is a distributive lattice, show that it forms the free frame over P, call this the coherent frame over P. 2. Introduce compact elements, show some facts about the subposet of compact elements KP. If P is a boolean algebra, show that K is functorial. 3. Show that KIdl(P) is isomorphic to P for every poset P. If P is a boolean algebra, show that this isomorphism is natural. 4. Introduce algebraic dcpos. Show that a dcpo A is algebraic if and only if it isomorphic to Idl(KA).  </p>
+
+</div> <!--main-text -->
+</div> <!-- content-wrapper -->
+</div> <!-- content -->
+</div> <!-- wrapper -->
+
+<nav class="prev_up_next">
+  <svg  id="showmore-minus" class="icon icon-eye-minus showmore"><use xlink:href="symbol-defs.svg#icon-eye-minus"></use></svg>
+
+  <svg  id="showmore-plus" class="icon icon-eye-plus showmore"><use xlink:href="symbol-defs.svg#icon-eye-plus"></use></svg>
+
+  <a href="sect0001.html" title="Preliminaries"><svg  class="icon icon-arrow-left "><use xlink:href="symbol-defs.svg#icon-arrow-left"></use></svg>
+</a>
+  <a href="index.html" title="Localic Stone Duality"><svg  class="icon icon-arrow-up "><use xlink:href="symbol-defs.svg#icon-arrow-up"></use></svg>
+</a>
+</nav>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/plastex.js"></script>
+<script type="text/javascript" src="js/svgxuse.js"></script>
+<script type="text/javascript" src="js/js.cookie.min.js"></script>
+<script type="text/javascript" src="js/showmore.js"></script>
+</body>
+</html>

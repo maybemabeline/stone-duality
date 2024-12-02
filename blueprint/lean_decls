@@ -1,1 +1,5 @@
-Order.Directed
+DirectedOn
+IsLowerSet
+Order.Ideal
+Order.downset_ideal
+Order.Dcpo
