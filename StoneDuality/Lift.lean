@@ -215,7 +215,8 @@ def ideal_lift_inf : InfHom (Ideal P) Q where
       unfold Set.image
       simp
 
--- mjau mjau
+end InfDcpo
+end InfLat
 
 
 

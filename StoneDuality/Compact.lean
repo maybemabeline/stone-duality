@@ -110,7 +110,7 @@ def compact_downset_ideal (x : A) : Ideal (Compact A) where
     simp
     use zx, kz, tz
 
-instance instSubsetDirected (Q : Set A) (S : Set Q) [D : Directed S] : 
+instance (Q : Set A) (S : Set Q) [D : Directed S] : 
   Directed { x : A | ∃ y ∈ S, x = y } where
   IsNonempty := by
     rcases D.IsNonempty with ⟨x, xS⟩

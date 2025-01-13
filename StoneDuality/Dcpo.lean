@@ -119,21 +119,6 @@ class InfDcpo (P) extends SemilatticeInf P, Dcpo P where
   distr_inf_dir_sup : ∀ S : Set P, {_ : Directed S} → 
     ∀ x : P, x ⊓ (dir_sup S) ≤ dir_sup { x ⊓ s | s ∈ S }
 
-instance instInfDcpoSet : InfDcpo (Set P) :=
-  { Lattice.toSemilatticeInf with
-    dir_sup := dir_sup
-    le_dir_sup := le_dir_sup
-    dir_sup_le := dir_sup_le
-    distr_inf_dir_sup := by
-      intro S _ A
-      unfold dir_sup; unfold instDcpoSet
-      simp
-      intro x ⟨xA, xS⟩
-      rcases xS with ⟨B, xB, BS⟩
-      simp
-      use B
-}
-
 namespace InfDcpo
 
 def distr_inf_dir_sup' [InfDcpo P] : ∀ S : Set P, {_ : Directed S} → 
