@@ -2,8 +2,33 @@ import Mathlib.Order.Hom.Basic
 import StoneDuality.Dcpo
 import StoneDuality.DirSet
 
+-- Definition of Scott continuity of monotone maps between dcpos. 
+-- We establish the scott continuity of two maps:
+-- 
+
 namespace Order
 namespace Dcpo
+
+-- section Image
+
+-- variable {P Q : Type*}
+-- variable [Preorder P] [Preorder Q]
+-- variable (f : P →o Q)
+
+-- instance dirset_image (S : Set P) [D : Directed S] : Directed (f '' S) where
+--   IsNonempty := by
+--     simp
+--     rcases D.IsNonempty with ⟨x, xS⟩
+--     use x, xS
+--   IsDirected := by
+--     rintro z ⟨x, xS, rfl⟩ w ⟨y, yS, rfl⟩
+--     rcases D.IsDirected x xS y yS with ⟨u, uS, xu, yu⟩
+--     use (f u)
+--     constructor
+--     · exact Set.mem_image_of_mem f uS
+--     · exact ⟨f.monotone' xu, f.monotone' yu⟩
+
+-- end Image
 
 variable {P : Type*}
 
@@ -25,7 +50,7 @@ def scott_cont := ∀ {S : Set P}, [Directed S] → f (dir_sup S) ≤ dir_sup (f
 theorem scott_cont_eq {f : P →o Q} (m : scott_cont f) (S : Set P) [Directed S] :
   f (dir_sup S) = dir_sup (f '' S) := by
   apply le_antisymm
-  · apply m
+  · exact m
   · apply dir_sup_image_le
 
 end Definition
@@ -69,7 +94,7 @@ def dir_sup_mono (S T : Set P) [Directed S] :
   apply le_dir_sup
   exact ST xS
 
-def dir_sup_hom : (DirSet P) →o  P where
+def dir_sup_hom : (DirSet P) →o P where
   toFun := fun S => dir_sup S
   monotone' := by
     intro S T ST

@@ -5,6 +5,17 @@ import StoneDuality.Dcpo
 import StoneDuality.ScottCont
 import StoneDuality.DirSet
 
+-- In this file, we establish properties of the ideal completion of a partial order P.
+-- The ideal completion always forms a dcpo, but properties of P are also retained
+-- in Ideal P and interact well with the dcpo structure.
+-- In particular, we show that:
+-- Ideal P forms a dcpo
+-- Ideal P always has a top element
+-- If P has a bottom element, then so does Ideal P
+-- If P has binary infima, then so does Ideal P and these distribute over directed suprema.
+-- If P has binary suprema, then so does Ideal P.
+-- If binary suprema distribute over binary infima in P, then they also do so in Ideal P.
+
 namespace Order
 namespace Dcpo
 
@@ -14,14 +25,33 @@ section DcpoIdeal
 
 variable [Preorder P]
 
+-- The ideals of a preorder P form a dcpo. 
+-- The directed supremum is given by the union of ideals.
+
 instance instDcpoIdeal : Dcpo (Ideal P) where
-  dir_sup S DS := by
-    apply Directed.toIdeal (⋃ T ∈ (Ideal.toDirSet_hom '' S), T : Set P)
-    intro x y yx
-    simp
-    intro I IS xI
-    use I, IS
-    exact I.lower' yx xI
+  dir_sup S DS := {
+    carrier := ⋃ T ∈ S, T
+    lower' := by
+      intro x y yx
+      simp
+      intro I IS xI
+      use I, IS
+      exact I.lower' yx xI
+    nonempty' := by
+      rcases DS.IsNonempty with ⟨I, IS⟩
+      simp
+      use I, IS
+      exact I.nonempty'
+    directed' := by
+      intro x xS y yS; simp at xS; simp at yS
+      rcases xS with ⟨I, IS, xI⟩
+      rcases yS with ⟨J, JS, yJ⟩
+      have ⟨K, KS, IK, JK⟩ := DS.IsDirected I IS J JS
+      have ⟨z, zK, xz, yz⟩ := K.directed' x (IK xI) y (JK yJ)
+      simp
+      use z, ⟨K, KS, zK⟩, xz, yz
+    
+  }
   le_dir_sup S s sS D := by
     intro x xs
     simp
@@ -38,41 +68,13 @@ instance instDcpoIdeal : Dcpo (Ideal P) where
   unfold instDcpoIdeal
   simp
 
-instance dirset_ideal (I : Ideal P) : Directed { downset_ideal x | x ∈ I } where
-  IsNonempty := by
-    rcases I.nonempty' with ⟨y, yI⟩
-    use (downset_ideal y)
-    simp
-    use y, yI
-  IsDirected := by
-    rintro _ ⟨x, xI, rfl⟩ _ ⟨y, yI, rfl⟩
-    rcases I.directed' x xI y yI with ⟨z, zI, xz, yz⟩
-    use (downset_ideal z)
-    simp
-    constructor
-    · use z, zI
-    · exact ⟨xz, yz⟩
-
-theorem ideal_le_dir_sup_dirset (I : Ideal P) : I ≤ dir_sup { downset_ideal x | x ∈ I } := by
-  intro x xI
-  simp
-  use x, xI
-
-theorem ideal_eq_dir_sup_dirset (I : Ideal P) : I = dir_sup { downset_ideal x | x ∈ I } := by
-  apply le_antisymm
-  · apply ideal_le_dir_sup_dirset
-  · apply dir_sup_le
-    intro J
-    simp
-    rintro x xI rfl
-    simp
-    exact xI
-
 end DcpoIdeal
 
 section TopDcpoIdeal
 
 variable [LE P] [OrderTop P]
+
+-- Ideal P always has a top element. The top ideal is given by the set P.
   
 instance : OrderTop (Ideal P) where
   top := 
@@ -89,6 +91,10 @@ end TopDcpoIdeal
 section BotDcpoIdeal
 
 variable [PartialOrder P] [OrderBot P]
+
+-- If P has a bottom element, then so does Ideal P. The bottom ideal is given
+-- by the singleton set containing the bottom element of P. Note that since ideals
+-- are required to be nonempty, the bottom ideal cannot be given by the empty set. 
 
 instance : OrderBot (Ideal P) where
   bot :=
@@ -110,6 +116,12 @@ end BotDcpoIdeal
 section InfDcpoIdeal
 
 variable [SemilatticeInf P]
+
+-- If P has binary infima, then so does Ideal P. The infimum of two ideals is
+-- given by their intersection. This does directly involve the infima of P,
+-- but they are required to show that the intersection in fact forms an ideal.
+-- Since intersections distribute over unions, it easy to show that binary infima
+-- in Ideal P distribute over directed suprema.
 
 instance : Min (Ideal P) where
   min I J := 
@@ -144,6 +156,10 @@ instance instInfDcpoIdeal : InfDcpo (Ideal P) :=
       use xI, xA
   }
 
+-- We characterise the infimum of two ideals as the set of the pointwise infima of their elements.
+-- In some situations, this definition is more convenient, but it is much harder
+-- to show that it forms the infimum directly.
+
 theorem pwise_inf_ideal (I J : Ideal P) : I ⊓ J = { x ⊓ y | (x ∈ I) (y ∈ J) } := by
   ext z
   constructor
@@ -160,8 +176,14 @@ section SemilatticeSup
 
 variable [SemilatticeSup P]
 
-instance : SemilatticeSup (Ideal P) where
-  sup I J :=
+-- If P has binary suprema, then so does Ideal P. We want to define the supremum 
+-- of two ideals to be the set of the pointwise suprema of their elements, but this
+-- set turns out not to be lower closed. Therefore, we consider its lower closure,
+-- defining the supremum to be the set of elements of P lying below some pointwise
+-- supremum of elements from the two ideals.
+
+instance : Max (Ideal P) where
+  max I J :=
   {
     carrier := { z : P | ∃ x ∈ I, ∃ y ∈ J, z ≤ x ⊔ y}
     lower' := by
@@ -180,8 +202,7 @@ instance : SemilatticeSup (Ideal P) where
       use z ⊔ w
       simp
       use x1 ⊔ x2, Ideal.sup_mem x1I x2I
-      use y1 ⊔ y2, Ideal.sup_mem y1J y2J
-      
+      use y1 ⊔ y2, Ideal.sup_mem y1J y2J   
       constructor
       · apply le_trans
         · exact zxy1
@@ -204,6 +225,10 @@ instance : SemilatticeSup (Ideal P) where
             · apply le_sup_right; use y1
             · apply le_sup_right
   }
+
+
+instance : SemilatticeSup (Ideal P) where
+  sup := max
   le_sup_left I J := by
     intro x xI
     have ⟨y, yJ⟩ := J.nonempty'
@@ -216,7 +241,7 @@ instance : SemilatticeSup (Ideal P) where
     apply le_sup_right
   sup_le := by
     intro I J K IK JK
-    simp
+    unfold max; unfold instMaxIdeal; simp
     rintro z ⟨x, xI, y, yJ, zxy⟩
     apply K.lower' zxy (Ideal.sup_mem (IK xI) (JK yJ))
 
@@ -226,6 +251,9 @@ end SemilatticeSup
 section DistribLattice
 
 variable [DistribLattice P]
+
+-- Finaly, we show that if binary suprema distribute over binary infima in P,
+-- then they also do so in Ideal P.
 
 instance : DistribLattice (Ideal P) where
   le_sup_inf := by

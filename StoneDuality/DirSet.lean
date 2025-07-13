@@ -105,14 +105,7 @@ instance instDirectedIdeal {I : Ideal P} : Directed (I : Set P) where
 
 end Ideal
 
-
 end Basic
-
--- structure DirSup [Preorder P] (S : DirSet P) where
---   dir_sup : P
---   le_dir_sup : ∀ s ∈ S, s ≤ dir_sup
---   dir_sup_le : ∀ x : P, (∀ s ∈ S, s ≤ x) → dir_sup ≤ x
-  
 
 variable {Q : Type*}
 variable [Preorder P] [Preorder Q]
@@ -131,10 +124,3 @@ instance dirset_image (S : Set P) [D : Directed S] : Directed (f '' S) where
     · exact Set.mem_image_of_mem f uS
     · exact ⟨f.monotone' xu, f.monotone' yu⟩
 
--- @[simp] lemma mem_dirset_image (S : DirSet P) (x : Q) : x ∈ dirset_image f S ↔ x ∈ f '' S.carrier := Iff.rfl
-
--- def comp_dirset_image {R : Type*} [Preorder R] (g : Q →o R) (S : DirSet P) :
---   (dirset_image g (dirset_image f S)) = dirset_image (OrderHom.comp g f) S := by
---   unfold dirset_image
---   ext
---   simp

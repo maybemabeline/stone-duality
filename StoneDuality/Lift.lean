@@ -2,6 +2,7 @@ import StoneDuality.Dcpo
 import StoneDuality.ScottCont
 import StoneDuality.IdealCompletion
 import StoneDuality.DirSet
+import StoneDuality.Compact
 import Mathlib.Order.Hom.Lattice
 
 namespace Order
@@ -11,6 +12,16 @@ variable {P : Type*}
 section PartOrd
 
 variable [PartialOrder P]
+
+theorem mono_downset : Monotone (fun x : P => downset_ideal x) := by
+  intro x y xy
+  simp
+  assumption
+
+def downset_hom : P →o Ideal P where
+  toFun := downset_ideal
+  monotone' := mono_downset
+
 variable {Q : Type*} [Dcpo Q]
 variable (f : P →o Q)
 

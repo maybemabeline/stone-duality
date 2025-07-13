@@ -1,9 +1,14 @@
 import StoneDuality.DirSet
 import StoneDuality.Basic
 
+-- In this file, we define the notion of dcpo and the related notion of
+-- dcpo with binary infima. We prove some properties and provide basic examples.
+
 variable {P : Type*}
 
 namespace Order
+
+-- Definition of dcpo
 
 class Dcpo (P) extends PartialOrder P where
 
@@ -11,12 +16,12 @@ class Dcpo (P) extends PartialOrder P where
   dir_sup : ∀ S : Set P, [Directed S] → P
   /-- The supremum is an upper bound for the set -/
   le_dir_sup : ∀ S : Set P, ∀ s ∈ S, {_ : Directed S} → s ≤ dir_sup S
-  /-- The supremum is a *least* upper bound for the set -/
+  /-- The supremum is the *least* upper bound for the set -/
   dir_sup_le : ∀ S : Set P, ∀ x : P, (∀ s ∈ S, s ≤ x) → {_ : Directed S} → dir_sup S ≤ x
 
 namespace Dcpo
 
-section Basic
+-- Monotonicity of taking the directed supremum
 
 theorem dir_sup_le_dir_sup [Dcpo P] (S T : Set P) {_ : Directed S} :
   (∀ x ∈ S, ∃ y ∈ T, x ≤ y) → {_ : Directed T} → dir_sup S ≤ dir_sup T := by
@@ -27,6 +32,8 @@ theorem dir_sup_le_dir_sup [Dcpo P] (S T : Set P) {_ : Directed S} :
   apply le_trans xy
   apply le_dir_sup
   exact yT
+
+-- The powerset forms a dcpo
 
 instance instDcpoSet : Dcpo (Set P) where
   dir_sup := fun S _ => Set.sUnion S
@@ -41,9 +48,11 @@ instance instDcpoSet : Dcpo (Set P) where
     simp
     exact H
     
-end Basic
-
 section DirSet
+
+-- We show that the set of all directed sets forms a dcpo.
+-- What's essentially required is to show that a directed union of directed sets
+-- is itself directed, which is proved below.
 
 variable [LE P]
 
@@ -86,6 +95,8 @@ instance instDcpoDirSet : Dcpo (DirSet P) where
 
 end DirSet
 
+-- Taking the pointwise infimum with a fixed element preserves directedness.
+
 instance instMeetDirected [SemilatticeInf P] (S : Set P) [D : Directed S] (x : P) :
   Directed { x ⊓ s | s ∈ S } where
   IsNonempty := by
@@ -114,12 +125,17 @@ instance instMeetDirected' [SemilatticeInf P] (S : Set P) [D : Directed S] (x : 
     enter [1, y, 1, s, 2]
     rw [ inf_comm ]
   infer_instance
+
+-- Definition of dcpo with binary infima. These are required to distribute over
+-- directed suprema.
  
 class InfDcpo (P) extends SemilatticeInf P, Dcpo P where
   distr_inf_dir_sup : ∀ S : Set P, {_ : Directed S} → 
     ∀ x : P, x ⊓ (dir_sup S) ≤ dir_sup { x ⊓ s | s ∈ S }
 
 namespace InfDcpo
+
+-- Dual notion of distributivity and proof that opposite inequality always holds.
 
 def distr_inf_dir_sup' [InfDcpo P] : ∀ S : Set P, {_ : Directed S} → 
    ∀ x : P, (dir_sup S) ⊓ x ≤ dir_sup { s ⊓ x | s ∈ S } := by

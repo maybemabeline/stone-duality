@@ -28,7 +28,6 @@ instance downset_ideal (x : P) : Ideal P where
     simp
     use yx, zx
 
-
 @[simp] lemma carrier_mem_ideal {S : Set P} {p : S.Nonempty} 
   {q : DirectedOn (· ≤ ·) S} {r : IsLowerSet S} {x : P} : 
   x ∈ {carrier := S, nonempty' := p, directed' := q, lower' := r : Ideal P} ↔ x ∈ S := Iff.rfl
@@ -46,7 +45,7 @@ instance downset_ideal (x : P) : Ideal P where
   unfold downset_ideal
   apply Iff.rfl
 
-@[simp] lemma le_downset (x : P) (I : Ideal P) : (downset x) ≤ I  ↔ x ∈ I := by
+@[simp] lemma downset_le (x : P) (I : Ideal P) : (downset x) ≤ (I : Set P)  ↔ x ∈ I := by
   constructor
   · intro xI
     apply xI
@@ -58,14 +57,5 @@ instance downset_ideal (x : P) : Ideal P where
     apply I.lower'
     · exact zx
     · exact xI
-    
-theorem mono_downset : Monotone (fun x : P => downset_ideal x) := by
-  intro x y xy
-  simp
-  assumption
-
-def downset_hom : P →o Ideal P where
-  toFun := downset_ideal
-  monotone' := mono_downset
 
 end Downset
