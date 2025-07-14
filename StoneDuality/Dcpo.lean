@@ -21,7 +21,7 @@ class Dcpo (P) extends PartialOrder P where
 
 namespace Dcpo
 
--- Monotonicity of taking the directed supremum
+-- Monotonicity of the directed supremum under a certain reduction ordering on sets.
 
 theorem dir_sup_le_dir_sup [Dcpo P] (S T : Set P) {_ : Directed S} :
   (∀ x ∈ S, ∃ y ∈ T, x ≤ y) → {_ : Directed T} → dir_sup S ≤ dir_sup T := by
