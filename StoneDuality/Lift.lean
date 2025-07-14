@@ -3,7 +3,17 @@ import StoneDuality.ScottCont
 import StoneDuality.IdealCompletion
 import StoneDuality.DirSet
 import StoneDuality.Compact
+import StoneDuality.Basic
 import Mathlib.Order.Hom.Lattice
+
+-- In this file, we establish freeness properties of the ideal completion. 
+-- We show that the ideal completion of a partial order P forms the free
+-- dcpo over P. This establishes an adjunction between the category of partial
+-- orders and monotone maps and the category of dcpos and Scott continuous maps.
+-- Next, we show that the ideal completion of a semilattice with binary infima P
+-- forms the free dcpo with binary infima over P. This establishes an adjunction
+-- between the category of semilattices and semilattice homomorphisms and the
+-- category of dcpos with binary infima and Scott continuous semilattice homomorphisms.
 
 namespace Order
 namespace Dcpo
@@ -13,17 +23,23 @@ section PartOrd
 
 variable [PartialOrder P]
 
-theorem mono_downset : Monotone (fun x : P => downset_ideal x) := by
-  intro x y xy
-  simp
-  assumption
+-- The unit of the adjunction is given by mapping each element x to the downset of x.
 
 def downset_hom : P →o Ideal P where
   toFun := downset_ideal
-  monotone' := mono_downset
+  monotone' := by
+    intro x y xy
+    simp
+    assumption
 
 variable {Q : Type*} [Dcpo Q]
 variable (f : P →o Q)
+
+-- Given a monotone map f : P -> Q from a partial order P to a dcpo Q,
+-- it lifts to a unique Scott continuous map from the ideal completion of P to Q.
+-- The lift is given by mapping an ideal I to the directed supremum
+-- of its image under f. This works since f preserves directedness
+-- and directed suprema exist in Q.
 
 def ideal_lift : Ideal P → Q := fun I => dir_sup (f '' I)
 
@@ -35,6 +51,21 @@ def ideal_lift_hom : (Ideal P) →o Q where
     apply dir_sup_mono
     apply Set.image_mono
     use IJ
+
+theorem ideal_lift_scott_cont : scott_cont (ideal_lift_hom f) := by
+  intro S D
+  unfold ideal_lift_hom; unfold ideal_lift
+  simp
+  apply le_trans
+  · apply dir_sup_mono
+    apply dirset_image_scott_cont
+    infer_instance
+  apply le_trans
+  · apply dir_sup_scott_cont
+  repeat simp_rw [ Set.image_image ]
+  rfl
+
+-- The lifting of f is in fact a lift of f along the unit map.
 
 theorem ideal_lift_comm : f = (ideal_lift_hom f) ∘ downset_hom := by
   funext x
@@ -49,18 +80,7 @@ theorem ideal_lift_comm : f = (ideal_lift_hom f) ∘ downset_hom := by
     intro y yx
     exact f.monotone' yx
 
-theorem ideal_lift_scott_cont : scott_cont (ideal_lift_hom f) := by
-  intro S D
-  unfold ideal_lift_hom; unfold ideal_lift
-  simp
-  apply le_trans
-  · apply dir_sup_mono
-    apply dirset_image_scott_cont
-    infer_instance
-  apply le_trans
-  · apply dir_sup_scott_cont
-  repeat simp_rw [ Set.image_image ]
-  rfl
+-- If two Scott continuous maps agree on the image of the unit map, they are equal.
 
 theorem downset_hom_epi_scott_cont {h g : Ideal P →o Q} (m : scott_cont h) (n : scott_cont g) :
   g ∘ downset_hom = h ∘ downset_hom → g = h := by
@@ -76,6 +96,8 @@ theorem downset_hom_epi_scott_cont {h g : Ideal P →o Q} (m : scott_cont h) (n 
   apply Eq.congr
   apply congrFun p
   rfl
+
+-- As a corrollary, we obtain the uniqueness of the lifting of f.
     
 theorem ideal_lift_unique {g : Ideal P →o Q} (m : scott_cont g) : 
   g ∘ downset_hom = f → g = ideal_lift_hom f := by
@@ -92,9 +114,35 @@ section InfLat
 
 namespace InfDcpo
 
+-- We now aim to show that given a semilattice homomorphism f : P -> Q from
+-- a semilattice to a dcpo with binary infima, it lifts to a unique Scott
+-- continuous semilattice homomorphism between the ideal completion of P and Q.
+-- Since preserving binary infima is only an additional property of the map, the
+-- uniqueness of the lift and the appropriate commutative triangle follow
+-- from the properties established above. We only have to establish that
+-- the lifting preserves binary infima.
+
 variable [SemilatticeInf P]
 variable {Q : Type*} [InfDcpo Q]
 variable (f : InfHom P Q)
+
+-- The unit map preserves binary infima.
+
+def downset_inf : InfHom P (Ideal P) where
+  toFun := downset_ideal
+  map_inf' := by
+    intro x y
+    ext z
+    simp
+    constructor
+    · rintro ⟨zx , zy⟩
+      use zx, zy
+    · rintro ⟨zx, zy⟩
+      use zx, zy
+
+-- Since instance resolution in Lean is not stable under rewriting, we
+-- have to establish the directedness of several equal sets by hand. This
+-- is a little janky, but I don't know how else to work with it.
 
 section instanceLemmas
 
@@ -177,6 +225,8 @@ instance : Directed  (⋃₀ { { x ⊓ y | x ∈ S } | y ∈ T }) where
 
 end instanceLemmas
 
+-- Further lemmas about constructions involving directed suprema
+
 lemma dir_sup_dir_sup_image (S : Set Q) (T : Set Q) [Directed S] [Directed T] :
   dir_sup { dir_sup { x ⊓ y | x ∈ S } | y ∈ T } ≤
   dir_sup ( ⋃₀ { { x ⊓ y | x ∈ S } | y ∈ T }) := by
@@ -205,6 +255,8 @@ theorem inf_dir_sup_le_dir_sup_pwise_inf (S : Set Q) (T : Set Q) [Directed S] [D
   simp
   intro y yT x xS
   use x, xS, y, yT
+
+-- The lifting of a semilattice homomorphism is a semilattice homomorphism.
   
 def ideal_lift_inf : InfHom (Ideal P) Q where
   toFun := ideal_lift f

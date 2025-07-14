@@ -107,20 +107,3 @@ end Ideal
 
 end Basic
 
-variable {Q : Type*}
-variable [Preorder P] [Preorder Q]
-variable (f : P →o Q)
-
-instance dirset_image (S : Set P) [D : Directed S] : Directed (f '' S) where
-  IsNonempty := by
-    simp
-    rcases D.IsNonempty with ⟨x, xS⟩
-    use x, xS
-  IsDirected := by
-    rintro z ⟨x, xS, rfl⟩ w ⟨y, yS, rfl⟩
-    rcases D.IsDirected x xS y yS with ⟨u, uS, xu, yu⟩
-    use (f u)
-    constructor
-    · exact Set.mem_image_of_mem f uS
-    · exact ⟨f.monotone' xu, f.monotone' yu⟩
-

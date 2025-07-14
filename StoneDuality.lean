@@ -17,4 +17,5 @@ import StoneDuality.Compact
 -- Definition of Scott continuity and basic properties
 import StoneDuality.ScottCont
 
+-- Freeness properties of the ideal completion among the two types of dcpos we consider
 import StoneDuality.Lift

@@ -29,29 +29,13 @@ variable [Preorder P]
 -- The directed supremum is given by the union of ideals.
 
 instance instDcpoIdeal : Dcpo (Ideal P) where
-  dir_sup S DS := {
-    carrier := ⋃ T ∈ S, T
-    lower' := by
-      intro x y yx
-      simp
-      intro I IS xI
-      use I, IS
-      exact I.lower' yx xI
-    nonempty' := by
-      rcases DS.IsNonempty with ⟨I, IS⟩
-      simp
-      use I, IS
-      exact I.nonempty'
-    directed' := by
-      intro x xS y yS; simp at xS; simp at yS
-      rcases xS with ⟨I, IS, xI⟩
-      rcases yS with ⟨J, JS, yJ⟩
-      have ⟨K, KS, IK, JK⟩ := DS.IsDirected I IS J JS
-      have ⟨z, zK, xz, yz⟩ := K.directed' x (IK xI) y (JK yJ)
-      simp
-      use z, ⟨K, KS, zK⟩, xz, yz
-    
-  }
+  dir_sup S DS := by
+    apply Directed.toIdeal (⋃ T ∈ (Ideal.toDirSet_hom '' S), T : Set P)
+    intro x y yx
+    simp
+    intro I IS xI
+    use I, IS
+    exact I.lower' yx xI
   le_dir_sup S s sS D := by
     intro x xs
     simp
